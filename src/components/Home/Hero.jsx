@@ -1,21 +1,23 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import gifImage from "../../assets/arrow.gif"; // Import your GIF file
 
 const Hero = () => {
   const [isLargeScreen, setIsLargeScreen] = useState(window.innerWidth >= 1024);
-  const [bgColor, setBgColor] = useState("transparent");
+  const [bgColor, setBgColor] = useState("rgba(0, 0, 0, 0.35)");
+  const resizeTimeout = useRef(null); // Prevents excessive resize handling
 
   useEffect(() => {
     const handleResize = () => {
-      setIsLargeScreen(window.innerWidth >= 1024);
+      clearTimeout(resizeTimeout.current);
+      resizeTimeout.current = setTimeout(() => {
+        setIsLargeScreen(window.innerWidth >= 1024);
+      }, 100); // Debounce resize event
     };
 
     const handleScroll = () => {
-      if (window.scrollY > 50) {
-        setBgColor("rgba(0, 0, 0, 0.35)");
-      } else {
-        setBgColor("transparent");
-      }
+      requestAnimationFrame(() => {
+        setBgColor(window.scrollY > 50 ? "rgba(0, 0, 0, 0.55)" : "rgba(0, 0, 0, 0.35)");
+      });
     };
 
     window.addEventListener("resize", handleResize);
@@ -34,15 +36,15 @@ const Hero = () => {
     >
       {/* Background Layer */}
       <div
-        className="absolute inset-0 transition-transform duration-1000 ease-in-out"
+        className="absolute inset-0 transition-all duration-700 ease-in-out"
         style={{
           backgroundImage: `url(https://i.pinimg.com/originals/e7/50/38/e75038ae16be9d330cb1f3563833647e.gif)`,
           backgroundSize: "cover",
           backgroundPosition: "center center",
           backgroundColor: bgColor,
-          opacity: 1.0, // Slightly reduce opacity for better contrast
-          filter: "brightness(50%)", // Darken background for readability
-          transform: "scale(1)",
+          opacity: 1.0,
+          filter: "brightness(50%)",
+          transform: "scale(1.01)", // Subtle scale to avoid jerky movements
         }}
       ></div>
 
@@ -53,12 +55,11 @@ const Hero = () => {
           background: "white",
           WebkitBackgroundClip: "text",
           WebkitTextFillColor: "transparent",
-          textShadow: "4px 4px 10px rgba(0, 0, 0, 0.5)", // Subtle glow effect
-          fontFamily: "'Bebas Neue', sans-serif", // Elegant font
+          textShadow: "4px 4px 10px rgba(0, 0, 0, 0.5)",
+          fontFamily: "'Bebas Neue', sans-serif",
         }}
       >
         STUDY MBBS IN RUSSIA <br /> FOR INDIAN STUDENTS
-        
       </h1>
 
       {/* GIF Below the Text */}

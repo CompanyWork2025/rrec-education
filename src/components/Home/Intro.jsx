@@ -86,17 +86,7 @@ const intro = () => {
                       />
                     </div>
                   </div>
-                  <div className="mt-auto text-right">
-                    <Link
-                      to="/news"
-                      onClick={() => {
-                        window.scrollTo(0, 0);
-                      }}
-                      className="text-black font-medium "
-                    >
-                      View <span className='text-purple-500'>News</span>
-                    </Link>
-                  </div>
+                
                 </div>
               </div>
             </SwiperSlide>
@@ -142,17 +132,7 @@ const intro = () => {
                         />
                       </div>
                     </div>
-                    <div className="mt-auto text-right">
-                      <Link
-                        to="/news"
-                        onClick={() => {
-                          window.scrollTo(0, 0);
-                        }}
-                        className="text-black font-medium "
-                      >
-                        View <span className='text-purple-500'>News</span>
-                      </Link>
-                    </div>
+                   
                   </div>
                 </div>
               </SwiperSlide>
