@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Helmet } from "react-helmet";
 import arrow from "../assets/arrow.gif";
 
 const Admission = () => {
@@ -15,6 +16,37 @@ const Admission = () => {
 
   return (
     <>
+    <Helmet>
+  <meta charSet="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  
+  {/* SEO Meta Tags */}
+  <meta name="description" content="Explore the step-by-step admission procedure for Russian universities. Find information about documents, visa requirements, and other essentials." />
+  <meta name="keywords" content="Admission Procedure, Russian Universities, Study in Russia, Step-by-Step Admission, MBBS in Russia" />
+  <meta name="author" content="Study in Russia" />
+
+  {/* Updated Favicon and Logo */}
+  <link rel="icon" type="image/png" href="/images/logo.png" />
+  <link rel="shortcut icon" href="/images/logo.png" />
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/logo.png" />
+
+  {/* Open Graph Meta Tags (For Social Media Sharing) */}
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Admission Procedure for Russian Universities | Study in Russia" />
+  <meta property="og:description" content="Explore the step-by-step guide for the admission process to Russian universities. Learn about the necessary documents, visa application, and entry procedures." />
+  <meta property="og:image" content="/images/logo.png" />
+  <meta property="og:url" content="http://studyinrussia.in/admission" />
+
+  {/* Twitter Card Meta Tags */}
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Admission Procedure for Russian Universities | Study in Russia" />
+  <meta name="twitter:description" content="Get all details on how to apply to Russian universities. Step-by-step admission guide, including documents, visa, and entry requirements." />
+  <meta name="twitter:image" content="/images/logo.png" />
+
+  {/* Website Title */}
+  <title>Admission Procedure for Russian Universities | Study in Russia</title>
+</Helmet>
+
       <div className="relative w-full lg:h-[350px] flex flex-col items-center justify-center bg-gray-900 text-white">
         {/* Background Image */}
         <div className="absolute inset-0">
