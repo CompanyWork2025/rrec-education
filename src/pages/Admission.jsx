@@ -3,49 +3,49 @@ import { Helmet } from "react-helmet";
 import arrow from "../assets/arrow.gif";
 
 const Admission = () => {
-    const [isVisible, setIsVisible] = useState(false);
-  
-    useEffect(() => {
-      // Trigger animation on component mount
-      const timer = setTimeout(() => {
-        setIsVisible(true);
-      }, 100); // Add slight delay for smoother effect
-  
-      return () => clearTimeout(timer);
-    }, []);
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    // Trigger animation on component mount
+    const timer = setTimeout(() => {
+      setIsVisible(true);
+    }, 100); // Add slight delay for smoother effect
+
+    return () => clearTimeout(timer);
+  }, []);
 
   return (
     <>
-    <Helmet>
-  <meta charSet="utf-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  
-  {/* SEO Meta Tags */}
-  <meta name="description" content="Explore the step-by-step admission procedure for Russian universities. Find information about documents, visa requirements, and other essentials." />
-  <meta name="keywords" content="Admission Procedure, Russian Universities, Study in Russia, Step-by-Step Admission, MBBS in Russia" />
-  <meta name="author" content="Study in Russia" />
+      <Helmet>
+        <meta charSet="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-  {/* Updated Favicon and Logo */}
-  <link rel="icon" type="image/png" href="/images/logo.png" />
-  <link rel="shortcut icon" href="/images/logo.png" />
-  <link rel="apple-touch-icon" sizes="180x180" href="/images/logo.png" />
+        {/* SEO Meta Tags */}
+        <meta name="description" content="Explore the step-by-step admission procedure for Russian universities. Find information about documents, visa requirements, and other essentials." />
+        <meta name="keywords" content="Admission Procedure, Russian Universities, Study in Russia, Step-by-Step Admission, MBBS in Russia" />
+        <meta name="author" content="Study in Russia" />
 
-  {/* Open Graph Meta Tags (For Social Media Sharing) */}
-  <meta property="og:type" content="website" />
-  <meta property="og:title" content="Admission Procedure for Russian Universities | Study in Russia" />
-  <meta property="og:description" content="Explore the step-by-step guide for the admission process to Russian universities. Learn about the necessary documents, visa application, and entry procedures." />
-  <meta property="og:image" content="/images/logo.png" />
-  <meta property="og:url" content="http://studyinrussia.in/admission" />
+        {/* Updated Favicon and Logo */}
+        <link rel="icon" type="image/png" href="/images/logo.png" />
+        <link rel="shortcut icon" href="/images/logo.png" />
+        <link rel="apple-touch-icon" sizes="180x180" href="/images/logo.png" />
 
-  {/* Twitter Card Meta Tags */}
-  <meta name="twitter:card" content="summary_large_image" />
-  <meta name="twitter:title" content="Admission Procedure for Russian Universities | Study in Russia" />
-  <meta name="twitter:description" content="Get all details on how to apply to Russian universities. Step-by-step admission guide, including documents, visa, and entry requirements." />
-  <meta name="twitter:image" content="/images/logo.png" />
+        {/* Open Graph Meta Tags (For Social Media Sharing) */}
+        <meta property="og:type" content="website" />
+        <meta property="og:title" content="Admission Procedure for Russian Universities | Study in Russia" />
+        <meta property="og:description" content="Explore the step-by-step guide for the admission process to Russian universities. Learn about the necessary documents, visa application, and entry procedures." />
+        <meta property="og:image" content="/images/logo.png" />
+        <meta property="og:url" content="http://studyinrussia.in/admission" />
 
-  {/* Website Title */}
-  <title>Admission Procedure for Russian Universities | Study in Russia</title>
-</Helmet>
+        {/* Twitter Card Meta Tags */}
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Admission Procedure for Russian Universities | Study in Russia" />
+        <meta name="twitter:description" content="Get all details on how to apply to Russian universities. Step-by-step admission guide, including documents, visa, and entry requirements." />
+        <meta name="twitter:image" content="/images/logo.png" />
+
+        {/* Website Title */}
+        <title>Admission Procedure for Russian Universities | Study in Russia</title>
+      </Helmet>
 
       <div className="relative w-full lg:h-[350px] flex flex-col items-center justify-center bg-gray-900 text-white">
         {/* Background Image */}
@@ -59,9 +59,8 @@ const Admission = () => {
         </div>
         {/* Hero Content */}
         <div
-          className={`flex flex-col items-center mt-24 z-10 transition-all duration-1000 ease-in-out ${
-            isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
-          }`}
+          className={`flex flex-col items-center mt-24 z-10 transition-all duration-1000 ease-in-out ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
+            }`}
         >
           <h1 className="text-2xl md:text-5xl font-bold drop-shadow-lg">
             ADMISSION PROCEDURE
@@ -176,19 +175,19 @@ const Admission = () => {
       </div>
 
       <div className="relative bg-cover bg-center h-80 md:h-80" style={{ backgroundImage: "url('https://t4.ftcdn.net/jpg/04/92/06/53/360_F_492065380_eSlHdkdNBy6ArNkk5gV0Lme1qhvTosSI.jpg')" }}>
-      <div className="absolute inset-0 bg-black opacity-50"></div> {/* Dark overlay */}
-      
-      <div className="relative z-10 flex flex-col items-center justify-center h-full text-center text-white px-4 sm:px-6 lg:px-8">
-        <h2 className="text-2xl lg:text-4xl font-extrabold leading-tight">A GATEWAY TO RUSSIA - RREC</h2>
-        <p className="mt-4 text-xl">Reliable Russian Educational Consultants</p>
-        
-        <div className="mt-8 space-y-4">
-          <p className="text-lg">Email: <a href="mailto:contact@rrec.com.ru" className="text-indigo-400 hover:underline">contact@rrec.com.ru</a></p>
-          <p className="text-lg">Email: <a href="mailto:rrec.educonsultants@gmail.com" className="text-indigo-400 hover:underline">rrec.educonsultants@gmail.com</a></p>
-          <p className="text-lg">Students or parents can write to us on WhatsApp: <span className="text-indigo-400">+79515174507 (24*7)</span></p>
+        <div className="absolute inset-0 bg-black opacity-50"></div> {/* Dark overlay */}
+
+        <div className="relative z-10 flex flex-col items-center justify-center h-full text-center text-white px-4 sm:px-6 lg:px-8">
+          <h2 className="text-2xl lg:text-4xl font-extrabold leading-tight">A GATEWAY TO RUSSIA - RREC</h2>
+          <p className="mt-4 text-xl">Reliable Russian Educational Consultants</p>
+
+          <div className="mt-8 space-y-4">
+            <p className="text-lg">Email: <a href="mailto:contact@rrec.com.ru" className="text-indigo-400 hover:underline">contact@rrec.com.ru</a></p>
+            <p className="text-lg">Email: <a href="mailto:rrec.educonsultants@gmail.com" className="text-indigo-400 hover:underline">rrec.educonsultants@gmail.com</a></p>
+            <p className="text-lg">Students or parents can write to us on WhatsApp: <span className="text-indigo-400">+79515174507 (24*7)</span></p>
+          </div>
         </div>
       </div>
-    </div>
     </>
   );
 };
