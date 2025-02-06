@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 
 const Slider = () => {
   const slides = [
@@ -29,6 +29,8 @@ const Slider = () => {
   ];
 
   const [activeSlide, setActiveSlide] = useState(0);
+  const [isInView, setIsInView] = useState(false);
+  const sectionRef = useRef(null);
 
   const handlePrevSlide = () => {
     setActiveSlide((prev) => (prev === 0 ? slides.length - 1 : prev - 1));
@@ -47,9 +49,38 @@ const Slider = () => {
     return () => clearInterval(interval); // Cleanup interval on component unmount
   }, [slides.length]);
 
+  // Intersection Observer logic
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsInView(true);
+        }
+      },
+      { threshold: 0.5 }
+    );
+
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
+    }
+
+    return () => {
+      if (sectionRef.current) {
+        observer.unobserve(sectionRef.current);
+      }
+    };
+  }, []);
+
   return (
-    <div className="flex flex-col items-center py-12 -mt-16 md:-mt-8 px-8 lg:px-4 bg-white">
-      <h2 className="text-2xl md:text-6xl font-bold mb-4 md:mb-8 text-black text-center">WHY <span className='text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-600'>CHOOSE</span> RUSSIAN UNIVERSITIES?</h2>
+    <div
+      ref={sectionRef}
+      className={`flex flex-col items-center py-12 -mt-16 md:-mt-8 px-8 lg:px-4 bg-white transition-all duration-1000 ease-in-out ${
+        isInView ? 'opacity-100 translate-y-0 animate-fadeSlideUp' : 'opacity-0 translate-y-10'
+      }`}
+    >
+      <h2 className="text-2xl md:text-6xl font-bold mb-4 md:mb-8 text-black text-center">
+        WHY <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-600">CHOOSE</span> RUSSIAN UNIVERSITIES?
+      </h2>
       <p className="text-center lg:text-lg text-black max-w-6xl mb-4 md:mb-8">
         Russian universities, including Rostov, Kazan, Crimea, and Volgograd, provide world-class education, cutting-edge research, and a rich cultural experience for international students.
       </p>

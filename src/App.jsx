@@ -3,11 +3,11 @@ import { lazy, Suspense } from "react";
 import ScrollToTop from "./components/Scroll";
 import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
+import Admission from "./pages/Admission";
 import Chatbot from './components/Chatbot'; // Import the Chatbot
 
 // Lazy Load Pages to Improve Performance
 const Home = lazy(() => import("./pages/Home"));
-const University = lazy(() => import("./pages/University"));
 const News = lazy(() => import("./pages/News"));
 const Apply = lazy(() => import("./pages/Contact"));
 
@@ -20,7 +20,7 @@ function App() {
       <Suspense fallback={<div className="h-screen flex items-center justify-center">Loading...</div>}>
         <Routes>
           <Route path="/" element={<Home />} />
-          <Route path="/universities" element={<University />} />
+          <Route path="/admission-procedure" element={<Admission />} />
           <Route path="/apply" element={<Apply />} />
           <Route path="/news" element={<News />} />
         </Routes>

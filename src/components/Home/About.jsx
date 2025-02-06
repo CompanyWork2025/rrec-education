@@ -29,7 +29,12 @@ const About = () => {
   return (
     <>
       {/* Main Content */}
-      <div className="container mx-auto py-12 lg:py-16 px-4 lg:px-14">
+      <div
+        ref={sectionRef}
+        className={`container mx-auto py-12 lg:py-16 px-4 lg:px-14 transition-all duration-1000 ease-in-out ${
+          isInView ? 'opacity-100 translate-y-0' : 'opacity-0 translate-y-10'
+        }`}
+      >
         <div className="flex flex-col lg:flex-row justify-between">
           {/* Left Side Image */}
           <div className="w-full -ml-4 md:ml-0 lg:w-1/2 mb-8">
@@ -62,6 +67,7 @@ const About = () => {
               src="https://miro.medium.com/v2/resize:fit:1400/1*efjn6y3ZHVrr7dZ2J_5QFQ.gif"
               alt="Students at Russian University"
               className="w-full h-auto lg:h-[350px] rounded-lg object-cover"
+              loading="lazy" // Lazy load the GIF
             />
           </div>
 
@@ -84,6 +90,7 @@ const About = () => {
               src="https://miro.medium.com/v2/resize:fit:1400/1*efjn6y3ZHVrr7dZ2J_5QFQ.gif"
               alt="Students at Russian University"
               className="w-full h-auto lg:h-[350px] rounded-lg object-cover"
+              loading="lazy" // Lazy load the GIF
             />
           </div>
         </div>

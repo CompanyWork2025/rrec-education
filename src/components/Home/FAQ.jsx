@@ -1,7 +1,9 @@
-import React, { useState } from 'react';
+import React, { useState, useEffect, useRef } from 'react';
 
 const FAQ = () => {
   const [activeIndex, setActiveIndex] = useState(null);
+  const [isInView, setIsInView] = useState(false);
+  const faqSectionRef = useRef(null);
 
   const toggleAnswer = (index) => {
     setActiveIndex(activeIndex === index ? null : index);
@@ -10,15 +12,15 @@ const FAQ = () => {
   const faqData = [
     {
       question: "What are the top universities in Russia?",
-      answer: "Some of the top universities in Russia include Lomonosov Moscow State University, St. Petersburg State University, and Novosibirsk State University,Rostov State Medical University, Kazan State Medical University, Kursk State Medical University, Crimea Federal University, Southern Federa, Peoples' Friendship University of Russia (RUDN University), I.M. Sechenov Moscow Medical University, Northern State Medical University (NSMU), Saint Petersburg State Paediatric  Medical University, Immanuel Kant Baltic Federal University (Medical Faculty),  Novosibirsk State Medical University (NSMU) ",
+      answer: "Some of the top universities in Russia include Lomonosov Moscow State University, St. Petersburg State University, and Novosibirsk State University, Rostov State Medical University, Kazan State Medical University, Kursk State Medical University, Crimea Federal University, Southern Federal University, Peoples' Friendship University of Russia (RUDN University), I.M. Sechenov Moscow Medical University, Northern State Medical University (NSMU), Saint Petersburg State Paediatric Medical University, Immanuel Kant Baltic Federal University (Medical Faculty), Novosibirsk State Medical University (NSMU)",
     },
     {
       question: "How do I apply to a Russian university?",
-      answer: "To apply to a Russian university, you typically need to complete an online application, provide your academic records, and prove proficiency in Russian or English, depending on the program. For more information and guidance you can contact official representative at ‪+7 951 519‑03‑76",
+      answer: "To apply to a Russian university, you typically need to complete an online application, provide your academic records, and prove proficiency in Russian or English, depending on the program. For more information and guidance, you can contact the official representative at ‪+7 951 519‑03‑76.",
     },
     {
       question: "What are the living costs for students in Russia?",
-      answer: "The living costs in Russia vary by location, but on average, students can expect to spend between $200 to 350$ per month depending on the city and lifestyle.",
+      answer: "The living costs in Russia vary by location, but on average, students can expect to spend between $200 to $350 per month depending on the city and lifestyle.",
     },
     {
       question: "Do I need to know Russian to study in Russia?",
@@ -42,7 +44,7 @@ const FAQ = () => {
     },
     {
       question: "How long do university degrees take in Russia?",
-      answer: "A bachelor's degree in Russia typically takes 4 & 6 years, while a master's degree generally takes 2 years. Some programs may have different durations depending on the field of study.",
+      answer: "A bachelor's degree in Russia typically takes 4 to 6 years, while a master's degree generally takes 2 years. Some programs may have different durations depending on the field of study.",
     },
     {
       question: "Are there entrance exams for Russian universities?",
@@ -50,7 +52,7 @@ const FAQ = () => {
     },
     {
       question: "What are the best student cities in Russia?",
-      answer: "Moscow, Kazan, Saint Petersburg, Rostov-on-Don, Yekaterinburg, Simferopol, Kursk are considered some of the best cities  for International students due to their high quality education and vibrant student life.",
+      answer: "Moscow, Kazan, Saint Petersburg, Rostov-on-Don, Yekaterinburg, Simferopol, and Kursk are considered some of the best cities for international students due to their high-quality education and vibrant student life.",
     },
     {
       question: "Is healthcare free for students in Russia?",
@@ -58,11 +60,11 @@ const FAQ = () => {
     },
     {
       question: "How do I get a student visa for Russia?",
-      answer: "To obtain a student visa for Russia, you need to apply through the Russian consulate in your country, with documents such as your invitation letter from the university and proof of funds for living expenses.         For more details or guidance you can contact official representative of universities at ‪+7 951 519‑03‑76",
+      answer: "To obtain a student visa for Russia, you need to apply through the Russian consulate in your country, with documents such as your invitation letter from the university and proof of funds for living expenses. For more details or guidance, you can contact an official representative of universities at ‪+7 951 519‑03‑76.",
     },
     {
       question: "What is the quality of education in Russian universities?",
-      answer: "Russia has many high quality education universities particularly in medical, technology and in engineering fields. Many universities of Russian Federation rank among top 100 in global rankings.",
+      answer: "Russia has many high-quality educational universities, particularly in the medical, technology, and engineering fields. Many universities of the Russian Federation rank among the top 100 in global rankings.",
     },
     {
       question: "Can I stay in Russia after my studies?",
@@ -73,12 +75,38 @@ const FAQ = () => {
       answer: "Students should be mindful of Russian customs and respect local traditions, especially regarding language, punctuality, and interpersonal communication. It's common to address professors formally and maintain a respectful demeanor.",
     },
   ];
-  
+
+  // Intersection Observer logic
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsInView(true);
+        }
+      },
+      { threshold: 0.1 }
+    );
+
+    if (faqSectionRef.current) {
+      observer.observe(faqSectionRef.current);
+    }
+
+    return () => {
+      if (faqSectionRef.current) {
+        observer.unobserve(faqSectionRef.current);
+      }
+    };
+  }, []);
 
   return (
-    <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-0">
+    <div
+      ref={faqSectionRef}
+      className={`max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-0 transition-all duration-1000 ease-in-out ${
+        isInView ? 'opacity-100 translate-y-0 animate-fadeSlideUp' : 'opacity-0 translate-y-10'
+      }`}
+    >
       <h2 className="text-3xl md:text-4xl md:text-center lg:text-left lg:text-5xl font-expressa lg:-ml-20 font-bold text-center mb-12 text-gray-800 lg:px-20">
-        Frequnetly Asked <span className="text-blue-500">Questions</span>
+        Frequently Asked <span className="text-blue-500">Questions</span>
       </h2>
       
       {faqData.map((item, index) => (

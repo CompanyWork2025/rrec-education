@@ -1,7 +1,18 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import arrow from "../../assets/arrow.gif";
 
 const Hero = () => {
+  const [isVisible, setIsVisible] = useState(false);
+
+  useEffect(() => {
+    // Trigger animation on component mount
+    const timer = setTimeout(() => {
+      setIsVisible(true);
+    }, 100); // Add slight delay for smoother effect
+
+    return () => clearTimeout(timer);
+  }, []);
+
   return (
     <div className="relative w-full lg:h-[650px] flex flex-col items-center justify-center bg-gray-900 text-white">
       {/* Background Image */}
@@ -14,15 +25,20 @@ const Hero = () => {
         />
       </div>
 
-
       {/* Hero Content */}
-      <div className="flex flex-col items-center mt-14 z-10">
-      <h1 className="text-2xl md:text-6xl font-bold drop-shadow-lg">
-      STUDY MBBS IN RUSSIA
-    </h1>
-    <h1 className="text-2xl md:text-6xl font-bold drop-shadow-4xl mt-2">
-      FOR INDIAN STUDENTS
-    </h1>
+      <div
+        className={`flex flex-col items-center mt-14 z-10 transition-all duration-1000 ease-in-out ${
+          isVisible
+            ? "opacity-100 translate-y-0"
+            : "opacity-0 translate-y-10"
+        }`}
+      >
+        <h1 className="text-2xl md:text-6xl font-bold drop-shadow-lg">
+          STUDY MBBS IN RUSSIA
+        </h1>
+        <h1 className="text-2xl md:text-6xl font-bold drop-shadow-4xl mt-2">
+          FOR INDIAN STUDENTS
+        </h1>
 
         {/* GIF Below Text */}
         <div className="-mt-6 md:-mt-16">
