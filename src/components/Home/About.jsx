@@ -66,7 +66,7 @@ const About = () => {
           </div>
 
           {/* Left Side Content */}
-          <div className="w-full lg:w-1/2 text-left">
+          <div className="w-full mt-6 md:mt-0 lg:w-1/2 text-left">
             <h2 className="text-3xl md:text-5xl text-blue-600 mb-4 font-bold">
               STUDENT LIFE IN RUSSIA
             </h2>
