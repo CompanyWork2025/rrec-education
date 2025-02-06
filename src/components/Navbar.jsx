@@ -55,7 +55,6 @@ const Navbar = () => {
       toggleMenu(); // Close the mobile menu when a link is clicked
     }, 100); // Close dropdown after a brief delay
   };
-  
 
   return (
     <>
@@ -68,7 +67,7 @@ const Navbar = () => {
               <span className="text-red-400 mr-2 bg-yellow-200 px-2 py-1 text-shadow-yellow font-bold rounded-md">
                 Breaking News:
               </span>
-              Admission is open for 2022. Book your seat today with RREC Team, Official Admission Partner of Top Russian Medical Universities; RostSMU, CrimeaFU, VolSMU, KazanFU, KazanSMU, NWSMU, NoSMA, KurskSMU, PFUR, UNN Nizhny Novgorod. Direct Admission with Less Processing fees.
+              Admission is open for 2025. Book your seat today with RREC Team, Official Admission Partner of Top Russian Medical Universities; RostSMU, CrimeaFU, VolSMU, KazanFU, KazanSMU, NWSMU, NoSMA, KurskSMU, PFUR, UNN Nizhny Novgorod. Direct Admission with Less Processing fees.
             </p>
           </div>
 
@@ -89,12 +88,8 @@ const Navbar = () => {
 
           {/* Navbar Links - Centered */}
           <div className="hidden md:flex flex-1 justify-center lg:-ml-10 space-x-8">
-            <NavLink to="/" className={({ isActive }) => isActive ? 'font-bold text-[#306185]' : 'text-gray-500 hover:text-[#2d4f6b]'}>
-              Home
-            </NavLink>
-            <NavLink to="/admission-procedure" className={({ isActive }) => isActive ? 'font-bold text-[#306185]' : 'text-gray-500 hover:text-[#2d4f6b]'}>
-              Admission Procedure
-            </NavLink>
+            <NavLink to="/" className={({ isActive }) => isActive ? 'font-bold text-[#306185]' : 'text-gray-500 hover:text-[#2d4f6b]'}>Home</NavLink>
+            <NavLink to="/admission-procedure" className={({ isActive }) => isActive ? 'font-bold text-[#306185]' : 'text-gray-500 hover:text-[#2d4f6b]'}>Admission Procedure</NavLink>
 
             <div className="flex space-x-4">
               {/* Medical Universities Dropdown */}
@@ -110,7 +105,7 @@ const Navbar = () => {
                 </button>
 
                 {openMedicalDropdown && (
-                  <div className="absolute mt-2 w-80 bg-white shadow-lg rounded-lg text-gray-800">
+                  <div className="absolute mt-2 w-80 bg-white shadow-lg rounded-lg text-gray-800 z-50">
                     <NavLink to="/fee" className="block py-2 px-4 hover:bg-gray-200" onClick={handleLinkClick}>Rostov State Medical University</NavLink>
                     <NavLink to="/blog" className="block py-2 px-4 hover:bg-gray-200" onClick={handleLinkClick}>Kazan State Medical University</NavLink>
                     <NavLink to="/neet-ug-updates" className="block py-2 px-4 hover:bg-gray-200" onClick={handleLinkClick}>North-western State Medical University</NavLink>

@@ -8,7 +8,7 @@ import Chatbot from './components/Chatbot'; // Import the Chatbot
 
 // Lazy Load Pages to Improve Performance
 const Home = lazy(() => import("./pages/Home"));
-const News = lazy(() => import("./pages/News"));
+const Contact = lazy(() => import("./pages/Contact"));
 const Apply = lazy(() => import("./pages/Apply"));
 
 function App() {
@@ -22,7 +22,7 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/admission-procedure" element={<Admission />} />
           <Route path="/apply" element={<Apply />} />
-          <Route path="/news" element={<News />} />
+          <Route path="/contact" element={<Contact />} />
         </Routes>
       </Suspense>
       <Footer />
