@@ -168,7 +168,7 @@ const Navbar = () => {
           {/* Right-Aligned Enquire Button */}
           <div className="hidden lg:block ml-auto lg:-mr-24">
             <NavLink
-              to="/enquire"
+              to="/apply"
               className="bg-gradient-to-r from-blue-500 via-blue-400 to-blue-600 text-white font-medium rounded-full px-8 py-2 shadow-lg hover:from-blue-600 hover:via-blue-500 hover:to-blue-700 transition-all duration-300"
             >
               Enquire
