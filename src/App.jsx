@@ -9,7 +9,7 @@ import Chatbot from './components/Chatbot'; // Import the Chatbot
 // Lazy Load Pages to Improve Performance
 const Home = lazy(() => import("./pages/Home"));
 const News = lazy(() => import("./pages/News"));
-const Apply = lazy(() => import("./pages/Contact"));
+const Apply = lazy(() => import("./pages/Apply"));
 
 function App() {
   return (
