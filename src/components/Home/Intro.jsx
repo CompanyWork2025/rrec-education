@@ -89,8 +89,9 @@ const Card = () => {
               {/* Front Side */}
               <div className="card-front flex flex-col items-center justify-start">
                 <div className="flex items-center justify-center w-28 h-28 bg-gradient-to-r from-blue-600 to-purple-400 rounded-full mb-4">
-                  <img src={card.logo} alt="Icon" className="w-20 h-20 object-fit" />
+                  <img src={card.logo} alt="Icon" className="w-full h-full object-contain rounded-full" />
                 </div>
+
                 <div className="text-center text-white">
                   <h2 className="mt-2 text-lg font-bold">{card.title}</h2>
                   <p className="text-white">{card.text}</p>
