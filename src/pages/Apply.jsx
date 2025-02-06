@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from 'react';
+import { Helmet } from 'react-helmet';
 import arrow from "../assets/arrow.gif";
 
 const Apply = () => {
@@ -40,6 +41,22 @@ const Apply = () => {
 
   return (
     <div className="flex flex-col min-h-screen">
+      <Helmet>
+        <meta charSet="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta name="description" content="Apply for admission to top Russian universities with our simple form. Submit your personal details, academic records, and select your desired university easily." />
+        <meta name="keywords" content="Apply, Admission, Russian Universities, Rostov, Kazan, Crimea, Medical University, NEET, 12th Marks, Apply Now, University Application" />
+        <meta name="author" content="Your Website Name" />
+        <meta property="og:title" content="Apply Now - Admission to Russian Universities" />
+        <meta property="og:description" content="Submit your application for Russian universities like Rostov, Kazan, and Crimea. Fill out the form with your details and apply now!" />
+        <meta property="og:image" content="URL_TO_YOUR_IMAGE" />
+        <meta property="og:url" content="YOUR_PAGE_URL" />
+        <meta name="twitter:card" content="summary_large_image" />
+        <meta name="twitter:title" content="Apply Now - Admission to Russian Universities" />
+        <meta name="twitter:description" content="Complete the application process for Russian universities with ease. Choose your university and submit your documents online." />
+        <meta name="twitter:image" content="URL_TO_YOUR_IMAGE" />
+        <title>Apply Now - Admission to Russian Universities</title>
+      </Helmet>
       {/* Banner */}
       <div className="relative w-full lg:h-[300px] flex flex-col items-center justify-center bg-gray-900 text-white">
         {/* Background Image */}
