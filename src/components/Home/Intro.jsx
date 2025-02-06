@@ -1,147 +1,156 @@
-import React from 'react';
-import { useNavigate } from 'react-router-dom';
-import { Swiper, SwiperSlide } from 'swiper/react';
-import 'swiper/css';
-import { Autoplay } from 'swiper/modules';
-import { FaArrowRight } from 'react-icons/fa';
-import { Link } from 'react-router-dom';
+import { useEffect, useRef } from 'react';
+import logo1 from '../../assets/rostov.png';
 
-const intro = () => {
-  const navigate = useNavigate();
-  const products = [
+const Card = () => {
+  const cardRefs = useRef([]);
+
+  useEffect(() => {
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach((entry) => {
+          if (entry.isIntersecting && !entry.target.classList.contains('animate-slide-in')) {
+            entry.target.classList.add('animate-slide-in');
+          }
+        });
+      },
+      { threshold: 0.1 }
+    );
+
+    cardRefs.current.forEach((ref) => {
+      if (ref) observer.observe(ref);
+    });
+
+    return () => observer.disconnect();
+  }, []);
+
+  const cards = [
     {
       id: 1,
-      image: "https://satyamevedu.co.in/wp-content/uploads/2023/04/WhatsApp-Image-2022-05-10-at-12.18.11-AM-1024x683.jpeg",
-      title: 'Rostov University: A Leading Educational Hub in Russia',
-    },
-    {
-      id: 3,
-      image: "https://www.ruseducation.in/wp-content/uploads/2022/01/Bashkir-State-Medical-University.webp",
-      title: 'Bashkir State Medical University: A Premier Medical Institution in Russia',
-    },
-    {
-      id: 5,
-      image: "https://www.ruseducation.in/wp-content/uploads/2022/01/Crimea-Federal-University.webp",
-      title: 'Crimea University: Excellence in Higher Education in Russia',
-    },
-    {
-      id: 4,
-      image: "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQFnaWh38SY7rlrqq_Pa5WMMP93Q_Bnc5RfeQ&s",
-      title: "Saint Petersburg State University: Russia's Top Academic Destination",
+      logo: logo1,
+      title: 'Rostov State Medical University',
+      text: 'One of the top medical universities in Russia, Rostov State Medical University is known for its high-quality medical education, modern infrastructure, and international student-friendly environment.',
+      backText: 'Accredited by WHO & NMC, offering affordable tuition fees and globally recognized medical degrees.',
+      link: '/rostov-state-medical-university',
     },
     {
       id: 2,
-      image: "https://images.shiksha.com/mediadata/images/1423632114phpSVpSVi_g.jpg",
-      title: 'Moscow State University: Leading Education in Russia and Beyond',
+      logo: "https://upload.wikimedia.org/wikipedia/en/1/14/KSMU_logo.png",
+      title: 'Kazan State Medical University',
+      text: 'A prestigious medical university in Russia, Kazan State Medical University offers world-class MBBS programs with advanced research facilities and English-medium courses.',
+      backText: 'Recognized by WHO & MCI, known for its strong academic curriculum and modern teaching methodologies.',
+      link: '/kazan-state-medical-university',
     },
+    {
+      id: 3,
+      logo: "https://www.eeua.ru/images/CFU_logo.png",
+      title: 'Crimea Federal University',
+      text: 'A top-ranked medical university, Crimea Federal University is an excellent choice for Indian students looking for an affordable and high-quality MBBS program in Russia.',
+      backText: 'Known for its research-driven curriculum, experienced faculty, and modern hospital training facilities.',
+      link: '/crimea-federal-university',
+    },
+    {
+      id: 4,
+      logo: "https://i0.wp.com/russian-resources.com/wp-content/uploads/2022/06/logo.png?fit=800%2C800&ssl=1",
+      title: 'Orenburg State Medical University',
+      text: 'Orenburg State Medical University is one of the oldest and most respected medical universities in Russia, offering internationally recognized MBBS programs with English-medium instruction.',
+      backText: 'A top choice for Indian students due to affordable tuition, excellent infrastructure, and strong academic reputation.',
+      link: '/orenburg-state-medical-university',
+    }
   ];
 
+
+
   return (
-    <div className="bg-white py-10">
-      <h2 className="text-2xl lg:text-5xl font-bold text-center mb-12 leading-tight">
-  <span className="bg-gradient-to-r from-purple-600 to-blue-500 text-transparent bg-clip-text 
-                   drop-shadow-lg shadow-black animate__animated animate__fadeInDown">
-    TOP MEDICAL UNIVERSITIES
-  </span>
-  <br />
-  <span className="text-gray-900 font-extrabold tracking-wide drop-shadow-lg">FOR STUDY IN </span>
-  <span className="text-purple-600 underline decoration-wavy decoration-purple-400 drop-shadow-md">
-    RUSSIA
-  </span>
-</h2>
+    <>
+      <section className="w-full flex flex-col items-center justify-center mt-14 md:my-16">
+        {/* Main Heading with Lines */}
+        <div className="flex items-center -mt-10 md:mt-0 justify-center w-full">
+          <div className="border-t-2 border-blue-500 w-1/4 hidden md:block"></div>
+          <h1 className="text-2xl md:text-5xl font-extrabold text-gray-800 mx-4 md:mx-6 text-center uppercase tracking-wide">
+            Medical Universities
+          </h1>
+          <div className="border-t-2 border-blue-500 w-1/4 hidden md:block"></div>
+        </div>
 
+        {/* Subheading */}
+        <h2 className="text-xl md:text-3xl font-semibold text-gray-700 mt-4 text-center">
+          Study MBBS in Russia
+        </h2>
+      </section>
 
-
-      <div className="px-8">
-        {/* Mobile Swiper */}
-        <Swiper
-          modules={[Autoplay]}
-          spaceBetween={30}
-          slidesPerView={1}
-          loop={true}
-          autoplay={{
-            delay: 3000,
-            disableOnInteraction: false,
-          }}
-          className="shadow-lg md:shadow-none md:border-none border rounded-2xl lg:hidden"
-        >
-          {products.map((product, index) => (
-            <SwiperSlide key={index}>
-              <div className="md:hidden flex flex-col bg-white border rounded-2xl shadow-xl shadow-[0_14px_45px_rgba(0,0,0,0.2)] border border-2 hover:shadow-lg transition-shadow h-[400px]">
-                <div className="bg-white w-full h-1/2 flex items-center justify-center rounded-t-2xl">
-                  <img src={product.image} alt={product.title} className="h-full w-full object-cover rounded-t-2xl" />
+      <section className="mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-16 md:gap-12 lg:gap-8 w-11/12 my-8 md:my-28 lg:my-10">
+        {cards.map((card, index) => (
+          <div
+            key={card.id}
+            ref={(el) => (cardRefs.current[index] = el)}
+            className="card-animation bg-gradient-to-r min-h-[380px] from-blue-400 to-purple-600 p-8 md:p-8 lg:p-8 rounded-lg opacity-0 transform -translate-y-40 lg:mb-0 shadow-lg perspective"
+          >
+            <div className="card-inner">
+              {/* Front Side */}
+              <div className="card-front flex flex-col items-center justify-start">
+                <div className="flex items-center justify-center w-28 h-28 bg-gradient-to-r from-blue-600 to-purple-400 rounded-full mb-4">
+                  <img src={card.logo} alt="Icon" className="w-20 h-20 object-fit" />
                 </div>
-                <div className="p-6 flex flex-col h-1/2 bg-white rounded-b-2xl">
-                  <div className="flex items-center justify-between w-full mb-2">
-                    <h3 className="text-xl font-semibold text-black">{product.title}</h3>
-                    <div className="flex items-center gap-2">
-                      <FaArrowRight
-                        className="text-black ml-2"
-                        onClick={() => {
-                          // Scroll to the top of the page before navigating to /news
-                          window.scrollTo({ top: 0, behavior: 'smooth' });
-                          // Navigate to the /news page
-                          navigate('/news');
-                        }}
-                      />
-                    </div>
-                  </div>
-                
+                <div className="text-center text-white">
+                  <h2 className="mt-2 text-lg font-bold">{card.title}</h2>
+                  <p className="text-white">{card.text}</p>
                 </div>
               </div>
-            </SwiperSlide>
-          ))}
-        </Swiper>
-
-        {/* Tablet and Desktop Swiper */}
-        <div className="hidden md:block md:px-6 lg:px-24">
-          <Swiper
-            modules={[Autoplay]}
-            spaceBetween={30}
-            slidesPerView={2} // Show 2 cards for md screens
-            loop={true}
-            autoplay={{
-              delay: 3000,
-              disableOnInteraction: false,
-            }}
-            breakpoints={{
-              1024: {
-                slidesPerView: 4, // Show 4 cards for lg screens
-              },
-            }}
-            className="rounded-2xl overflow-visible"
-          >
-            {products.map((product, index) => (
-              <SwiperSlide key={index}>
-                <div className="relative flex flex-col bg-white border rounded-2xl shadow-md hover:shadow-xl transition-shadow h-[380px] sm:h-[380px] md:h-[380px] lg:h-[420px] shadow-[0_14px_45px_rgba(0,0,0,0.2)] mb-6">
-                  <div className="bg-gradient-to-r from-[#3967F0] to-[#A100FF] w-full h-2/4 flex items-center justify-center rounded-t-2xl">
-                    <img src={product.image} alt={product.title} className="h-full w-full object-cover rounded-t-2xl" />
-                  </div>
-                  <div className="p-6 flex flex-col h-1/2 bg-white rounded-b-2xl group">
-                    <div className="flex items-center justify-between w-full mb-2">
-                      <h3 className="text-xl font-semibold text-black">{product.title}</h3>
-                      <div className="flex items-center gap-2">
-                        <FaArrowRight
-                          className="text-black ml-2"
-                          onClick={() => {
-                            // Scroll to the top of the page before navigating to /news
-                            window.scrollTo({ top: 0, behavior: 'smooth' });
-                            // Navigate to the /news page
-                            navigate('/news');
-                          }}
-                        />
-                      </div>
-                    </div>
-                   
-                  </div>
+              {/* Back Side */}
+              <div className="card-back flex flex-col items-center px-4 justify-center text-center bg-gradient-to-r from-blue-400 to-purple-600 rounded-lg">
+                <p className="text-white text-lg font-bold">{card.backText}</p>
+                {/* Button for Navigation */}
+                <div className="mt-4 text-center">
+                  <a
+                    href={card.link}
+                    className="bg-white text-orange-600 font-bold py-2 px-4 rounded hover:bg-orange-600 hover:text-white transition duration-300"
+                  >
+                    Learn More
+                  </a>
                 </div>
-              </SwiperSlide>
-            ))}
-          </Swiper>
-        </div>
-      </div>
-    </div>
+              </div>
+            </div>
+          </div>
+        ))}
+        <style jsx>{`
+        .perspective {
+          perspective: 1000px;
+        }
+
+        .card-inner {
+          position: relative;
+          width: 100%;
+          height: 100%;
+          transform-style: preserve-3d;
+          transition: transform 0.6s ease;
+        }
+
+        .card-animation:hover .card-inner {
+          transform: rotateY(180deg);
+        }
+
+        .card-front,
+        .card-back {
+          position: absolute;
+          width: 100%;
+          height: 100%;
+          backface-visibility: hidden;
+          border-radius: inherit;
+        }
+
+        .card-back {
+          transform: rotateY(180deg);
+        }
+
+        .animate-slide-in {
+          opacity: 1;
+          transform: translateY(0);
+          transition: opacity 0.6s ease, transform 0.6s ease;
+        }
+      `}</style>
+      </section>
+    </>
   );
 };
 
-export default intro;
+export default Card;

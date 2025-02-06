@@ -3,7 +3,8 @@ import { Helmet } from "react-helmet";  // Import the Helmet component
 import Hero from "../components/Home/Hero";
 import Intro from "../components/Home/Intro";
 import FAQ from "../components/Home/FAQ";
-
+import About from "../components/Home/About";
+import Slider from "../components/Home/Slider";
 
 const Home = () => {
     return (
@@ -30,6 +31,8 @@ const Home = () => {
           </Helmet>
           <Hero />
           <Intro />
+          <About />
+          <Slider />
           <FAQ />
          
         </>

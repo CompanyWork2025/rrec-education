@@ -76,16 +76,16 @@ const FAQ = () => {
   
 
   return (
-    <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+    <div className="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-0">
       <h2 className="text-3xl md:text-4xl md:text-center lg:text-left lg:text-5xl font-expressa lg:-ml-20 font-bold text-center mb-12 text-gray-800 lg:px-20">
-        Frequnetly Asked <span className="text-purple-500">Questions</span>
+        Frequnetly Asked <span className="text-blue-500">Questions</span>
       </h2>
       
       {faqData.map((item, index) => (
         <div key={index} className="mb-4">
           <button
             onClick={() => toggleAnswer(index)}
-            className="w-full text-left p-4 text-gray-700 lg:text-xl rounded-lg shadow-md hover:bg-purple-400 hover:text-white focus:outline-none transition duration-200"
+            className="w-full text-left p-4 text-gray-700 lg:text-xl rounded-lg shadow-md hover:bg-blue-400 hover:text-white focus:outline-none transition duration-200"
           >
             {index + 1}. {item.question}
           </button>
