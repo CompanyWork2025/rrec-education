@@ -5,6 +5,7 @@ import Intro from "../components/Home/Intro";
 import FAQ from "../components/Home/FAQ";
 import About from "../components/Home/About";
 import Slider from "../components/Home/Slider";
+import Videos from "../components/Home/UniversityVideos";
 
 const Home = () => {
     return (
@@ -34,7 +35,7 @@ const Home = () => {
           <About />
           <Slider />
           <FAQ />
-         
+          <Videos />
         </>
     );
 }
