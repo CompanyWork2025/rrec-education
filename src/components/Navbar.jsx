@@ -1,14 +1,14 @@
 import React, { useState, useEffect, useRef } from "react";
 import { NavLink } from "react-router-dom"; // Import NavLink from react-router-dom
 import logo from "../assets/logo.png";
-import { useLocation } from "react-router-dom";
+
 
 const Navbar = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
   const [language, setLanguage] = useState("ENG");
   const [openMedicalDropdown, setOpenMedicalDropdown] = useState(false);
   const [openTechnicalDropdown, setOpenTechnicalDropdown] = useState(false);
-  const location = useLocation();
+
 
   const medicalDropdownRef = useRef(null); // Separate ref for Medical dropdown
   const technicalDropdownRef = useRef(null); // Separate ref for Technical dropdown
@@ -93,7 +93,7 @@ const Navbar = () => {
 
             <div className="flex space-x-4">
               {/* Medical Universities Dropdown */}
-              <div className="relative" ref={medicalDropdownRef}>
+              <div className="relative z-50">
                 <button
                   onClick={toggleMedicalDropdown}
                   className="text-gray-500 hover:text-[#2d4f6b] font-medium flex items-center space-x-2"
@@ -105,7 +105,7 @@ const Navbar = () => {
                 </button>
 
                 {openMedicalDropdown && (
-                  <div className="absolute mt-2 w-80 bg-white shadow-lg rounded-lg text-gray-800 z-50">
+                  <div className="absolute mt-2 w-80 bg-white shadow-lg rounded-lg text-gray-800 z-50 overflow-visible ">
                     <NavLink to="/university/rostov" className="block py-2 px-4 hover:bg-gray-200" onClick={handleLinkClick}>Rostov State Medical University</NavLink>
                     <NavLink to="/university/kazan" className="block py-2 px-4 hover:bg-gray-200" onClick={handleLinkClick}>Kazan State Medical University</NavLink>
                     <NavLink to="/university/north-western" className="block py-2 px-4 hover:bg-gray-200" onClick={handleLinkClick}>North-western State Medical University</NavLink>
@@ -121,7 +121,7 @@ const Navbar = () => {
               </div>
 
               {/* Technical Universities Dropdown */}
-              <div className="relative" ref={technicalDropdownRef}>
+              <div className="relative z-50">
                 <button
                   onClick={toggleTechnicalDropdown}
                   className="text-gray-500 hover:text-[#2d4f6b] font-medium flex items-center space-x-2"
@@ -133,7 +133,7 @@ const Navbar = () => {
                 </button>
 
                 {openTechnicalDropdown && (
-                  <div className="absolute mt-2 w-60 bg-white shadow-lg rounded-lg text-gray-800">
+                  <div className="absolute mt-2 w-60 bg-white shadow-lg rounded-lg text-gray-800 z-50 overflow-visible">
                     <NavLink to="/tech-university/don-state-technical-university" className="block py-2 px-4 hover:bg-gray-200" onClick={handleLinkClick}>
                       Don State Technical University
                     </NavLink>
