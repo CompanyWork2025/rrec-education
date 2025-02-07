@@ -106,17 +106,18 @@ const Navbar = () => {
 
                 {openMedicalDropdown && (
                   <div className="absolute mt-2 w-80 bg-white shadow-lg rounded-lg text-gray-800 z-50">
-                    <NavLink to="/fee" className="block py-2 px-4 hover:bg-gray-200" onClick={handleLinkClick}>Rostov State Medical University</NavLink>
-                    <NavLink to="/blog" className="block py-2 px-4 hover:bg-gray-200" onClick={handleLinkClick}>Kazan State Medical University</NavLink>
-                    <NavLink to="/neet-ug-updates" className="block py-2 px-4 hover:bg-gray-200" onClick={handleLinkClick}>North-western State Medical University</NavLink>
-                    <NavLink to="/faqs" className="block py-2 px-4 hover:bg-gray-200" onClick={handleLinkClick}>Kazan Federal University</NavLink>
-                    <NavLink to="/upcoming-events" className="block py-2 px-4 hover:bg-gray-200" onClick={handleLinkClick}>Petrozavodsk State University</NavLink>
-                    <NavLink to="/nmc-regulations" className="block py-2 px-4 hover:bg-gray-200" onClick={handleLinkClick}>Yaroslavl State Medical University</NavLink>
-                    <NavLink to="/recognition" className="block py-2 px-4 hover:bg-gray-200" onClick={handleLinkClick}>Izhevsk State Medical Academy</NavLink>
-                    <NavLink to="/recognition" className="block py-2 px-4 hover:bg-gray-200" onClick={handleLinkClick}>Peoples’ Friendship University</NavLink>
-                    <NavLink to="/recognition" className="block py-2 px-4 hover:bg-gray-200" onClick={handleLinkClick}>Crimea Federal University</NavLink>
+                    <NavLink to="/university/rostov" className="block py-2 px-4 hover:bg-gray-200" onClick={handleLinkClick}>Rostov State Medical University</NavLink>
+                    <NavLink to="/university/kazan" className="block py-2 px-4 hover:bg-gray-200" onClick={handleLinkClick}>Kazan State Medical University</NavLink>
+                    <NavLink to="/university/north-western" className="block py-2 px-4 hover:bg-gray-200" onClick={handleLinkClick}>North-western State Medical University</NavLink>
+                    <NavLink to="/university/kazan-federal" className="block py-2 px-4 hover:bg-gray-200" onClick={handleLinkClick}>Kazan Federal University</NavLink>
+                    <NavLink to="/university/petrozavodsk" className="block py-2 px-4 hover:bg-gray-200" onClick={handleLinkClick}>Petrozavodsk State University</NavLink>
+                    <NavLink to="/university/yaroslavl" className="block py-2 px-4 hover:bg-gray-200" onClick={handleLinkClick}>Yaroslavl State Medical University</NavLink>
+                    <NavLink to="/university/izhevsk" className="block py-2 px-4 hover:bg-gray-200" onClick={handleLinkClick}>Izhevsk State Medical Academy</NavLink>
+                    <NavLink to="/university/peoples-friendship" className="block py-2 px-4 hover:bg-gray-200" onClick={handleLinkClick}>Peoples’ Friendship University</NavLink>
+                    <NavLink to="/university/crimea" className="block py-2 px-4 hover:bg-gray-200" onClick={handleLinkClick}>Crimea Federal University</NavLink>
                   </div>
                 )}
+
               </div>
 
               {/* Technical Universities Dropdown */}

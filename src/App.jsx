@@ -5,6 +5,7 @@ import Navbar from "./components/Navbar";
 import Footer from "./components/Footer";
 import Admission from "./pages/Admission";
 import Chatbot from './components/Chatbot'; // Import the Chatbot
+import UniversityDetailPage from "./pages/UniversityDetailPage";
 
 // Lazy Load Pages to Improve Performance
 const Home = lazy(() => import("./pages/Home"));
@@ -21,6 +22,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/admission-procedure" element={<Admission />} />
+          <Route path="/university/:id" element={<UniversityDetailPage />} />
           <Route path="/apply" element={<Apply />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
