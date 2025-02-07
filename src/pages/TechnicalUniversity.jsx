@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 import { useParams } from "react-router-dom";
 import arrow from "../assets/arrow.gif";
 
@@ -228,6 +229,36 @@ function UniversityDetailPage() {
 
     return (
         <>
+           <Helmet>
+                <meta charSet="utf-8" />
+                <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+                {/* SEO Meta Tags */}
+                <meta name="description" content={`${techUniversity.intro} Learn more about the admission steps and courses at ${techUniversity.name}.`} />
+                <meta name="keywords" content={`${techUniversity.name}, Admission Procedure, Study in Russia, Russian Universities, ${techUniversity.name} Admission`} />
+                <meta name="author" content="Study in Russia" />
+
+                {/* Updated Favicon and Logo */}
+                <link rel="icon" type="image/png" href="/images/logo.png" />
+                <link rel="shortcut icon" href="/images/logo.png" />
+                <link rel="apple-touch-icon" sizes="180x180" href="/images/logo.png" />
+
+                {/* Open Graph Meta Tags (For Social Media Sharing) */}
+                <meta property="og:type" content="website" />
+                <meta property="og:title" content={`${techUniversity.name} | Study in Russia`} />
+                <meta property="og:description" content={`${techUniversity.intro} Find out about the admission process and all the necessary steps to study at ${techUniversity.name}.`} />
+                <meta property="og:image" content={techUniversity.aboutImage} />
+                <meta property="og:url" content={`http://studyinrussia.in/admission/${techUniversity.id}`} />
+
+                {/* Twitter Card Meta Tags */}
+                <meta name="twitter:card" content="summary_large_image" />
+                <meta name="twitter:title" content={`${techUniversity.name} | Study in Russia`} />
+                <meta name="twitter:description" content={`${techUniversity.intro} Explore the admission steps and opportunities at ${techUniversity.name}.`} />
+                <meta name="twitter:image" content={techUniversity.aboutImage} />
+
+                {/* Website Title */}
+                <title>{`${techUniversity.name} | Admission Procedure | Study in Russia`}</title>
+            </Helmet>
+
             <div className="relative w-full lg:h-[300px] flex flex-col items-center justify-center bg-gray-900 text-white">
                 {/* Background Image */}
                 <div className="absolute inset-0">

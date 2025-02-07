@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
+import { Helmet } from "react-helmet";
 import { useParams } from "react-router-dom";
 import arrow from "../assets/arrow.gif";
 
@@ -324,6 +325,16 @@ function UniversityDetailPage() {
 
     return (
         <>
+            {/* Helmet for SEO */}
+            <Helmet>
+                <title>{university.name} - Admission Process</title>
+                <meta name="description" content={university.intro} />
+                <meta name="keywords" content={`Admission, ${university.name}, Medical University, Russia`} />
+                <meta property="og:title" content={university.name} />
+                <meta property="og:description" content={university.intro} />
+                <meta property="og:image" content={university.aboutImage} />
+            </Helmet>
+
             <div className="relative w-full lg:h-[300px] flex flex-col items-center justify-center bg-gray-900 text-white">
                 {/* Background Image */}
                 <div className="absolute inset-0">
