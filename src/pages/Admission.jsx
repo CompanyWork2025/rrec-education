@@ -182,9 +182,9 @@ const Admission = () => {
           <p className="mt-4 text-xl">Reliable Russian Educational Consultants</p>
 
           <div className="mt-8 space-y-4">
-            <p className="text-lg">Email: <a href="mailto:contact@rrec.com.ru" className="text-indigo-400 hover:underline">contact@rrec.com.ru</a></p>
+            <p className="text-lg">Email: <a href="mailto:contact@rrecrussia.com" className="text-indigo-400 hover:underline">contact@rrecrussia.com</a></p>
             <p className="text-lg">Email: <a href="mailto:rrec.educonsultants@gmail.com" className="text-indigo-400 hover:underline">rrec.educonsultants@gmail.com</a></p>
-            <p className="text-lg">Students or parents can write to us on WhatsApp: <span className="text-indigo-400">+79515174507 (24*7)</span></p>
+            <p className="text-lg">Students or parents can write to us on WhatsApp: <span className="text-indigo-400">+7 951 537-11-33 (24*7)</span></p>
           </div>
         </div>
       </div>
