@@ -236,8 +236,8 @@ const Navbar = () => {
             <NavLink to="/" onClick={toggleMenu} className={({ isActive }) => isActive ? 'font-bold text-[#306185] block text-center' : 'text-gray-500 hover:text-blue-500 block text-center'}>
               Home
             </NavLink>
-            <NavLink to="/admission-procedure" onClick={toggleMenu} className={({ isActive }) => isActive ? 'font-bold text-[#306185] block text-center' : 'text-gray-500 hover:text-blue-500 block text-center'}>
-              Admission Procedure
+            <NavLink to="/about" onClick={toggleMenu} className={({ isActive }) => isActive ? 'font-bold text-[#306185] block text-center' : 'text-gray-500 hover:text-blue-500 block text-center'}>
+              About Us
             </NavLink>
 
             {/* Mobile Dropdowns for Medical and Technical */}
@@ -313,6 +313,10 @@ const Navbar = () => {
                 </div>
               )}
             </div>
+
+            <NavLink to="/admission-procedure" onClick={toggleMenu} className={({ isActive }) => isActive ? 'font-bold text-[#306185] block text-center' : 'text-gray-500 hover:text-blue-500 block text-center'}>
+              Admission Procedure
+            </NavLink>
 
             <NavLink to="/apply" onClick={toggleMenu} className={({ isActive }) => isActive ? 'font-bold text-[#306185] block text-center' : 'text-gray-500 hover:text-blue-500 block text-center'}>
               Apply Now
