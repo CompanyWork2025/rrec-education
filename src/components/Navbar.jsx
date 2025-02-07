@@ -134,22 +134,22 @@ const Navbar = () => {
 
                 {openTechnicalDropdown && (
                   <div className="absolute mt-2 w-60 bg-white shadow-lg rounded-lg text-gray-800">
-                    <NavLink to="/don-state-technical-university" className="block py-2 px-4 hover:bg-gray-200" onClick={handleLinkClick}>
+                    <NavLink to="/tech-university/don-state-technical-university" className="block py-2 px-4 hover:bg-gray-200" onClick={handleLinkClick}>
                       Don State Technical University
                     </NavLink>
-                    <NavLink to="/southern-federal-university" className="block py-2 px-4 hover:bg-gray-200" onClick={handleLinkClick}>
+                    <NavLink to="/tech-university/southern-federal-university" className="block py-2 px-4 hover:bg-gray-200" onClick={handleLinkClick}>
                       Southern Federal University
                     </NavLink>
-                    <NavLink to="/rostov-state-economics" className="block py-2 px-4 hover:bg-gray-200" onClick={handleLinkClick}>
+                    <NavLink to="/tech-university/rostov-state-economics" className="block py-2 px-4 hover:bg-gray-200" onClick={handleLinkClick}>
                       Rostov State University Of Economics, Russia
                     </NavLink>
-                    <NavLink to="/kazan-federal-university" className="block py-2 px-4 hover:bg-gray-200" onClick={handleLinkClick}>
+                    <NavLink to="/tech-university/kazan-federal-university" className="block py-2 px-4 hover:bg-gray-200" onClick={handleLinkClick}>
                       Kazan Federal University
                     </NavLink>
-                    <NavLink to="/ukhta-state-technical-university" className="block py-2 px-4 hover:bg-gray-200" onClick={handleLinkClick}>
+                    <NavLink to="/tech-university/ukhta-state-technical-university" className="block py-2 px-4 hover:bg-gray-200" onClick={handleLinkClick}>
                       Ukhta State Technical University
                     </NavLink>
-                    <NavLink to="/udmurt-state-university" className="block py-2 px-4 hover:bg-gray-200" onClick={handleLinkClick}>
+                    <NavLink to="/tech-university/udmurt-state-university" className="block py-2 px-4 hover:bg-gray-200" onClick={handleLinkClick}>
                       Udmurt State University
                     </NavLink>
                   </div>
