@@ -1,5 +1,6 @@
 import { useEffect, useRef } from 'react';
 import logo1 from '../../assets/rostov.png';
+import img from "../../assets/np.png";
 
 const Card = () => {
   const cardRefs = useRef([]);
@@ -30,7 +31,7 @@ const Card = () => {
       title: 'Rostov State Medical University',
       text: 'One of the top medical universities in Russia, Rostov State Medical University is known for its high-quality medical education, modern infrastructure, and international student-friendly environment.',
       backText: 'Accredited by WHO & NMC, offering affordable tuition fees and globally recognized medical degrees.',
-      link: '/rostov-state-medical-university',
+      link: '/university/rostov',
     },
     {
       id: 2,
@@ -38,7 +39,7 @@ const Card = () => {
       title: 'Kazan State Medical University',
       text: 'A prestigious medical university in Russia, Kazan State Medical University offers world-class MBBS programs with advanced research facilities and English-medium courses.',
       backText: 'Recognized by WHO & MCI, known for its strong academic curriculum and modern teaching methodologies.',
-      link: '/kazan-state-medical-university',
+      link: '/university/kazan',
     },
     {
       id: 3,
@@ -46,16 +47,16 @@ const Card = () => {
       title: 'Crimea Federal University',
       text: 'A top-ranked medical university, Crimea Federal University is an excellent choice for Indian students looking for an affordable and high-quality MBBS program in Russia.',
       backText: 'Known for its research-driven curriculum, experienced faculty, and modern hospital training facilities.',
-      link: '/crimea-federal-university',
+      link: '/university/crimea',
     },
     {
       id: 4,
-      logo: "https://i0.wp.com/russian-resources.com/wp-content/uploads/2022/06/logo.png?fit=800%2C800&ssl=1",
-      title: 'Orenburg State Medical University',
-      text: 'Orenburg State Medical University is one of the oldest and most respected medical universities in Russia, offering internationally recognized MBBS programs with English-medium instruction.',
-      backText: 'A top choice for Indian students due to affordable tuition, excellent infrastructure, and strong academic reputation.',
-      link: '/orenburg-state-medical-university',
-    }
+      logo: img, 
+      title: 'North-Western State Medical University',
+      text: 'North-Western State Medical University is one of Russia\'s prestigious institutions offering world-class medical education, with programs available in English for international students.',
+      backText: 'Known for its state-of-the-art facilities and research contributions, it is a top choice for students pursuing a career in medicine.',
+      link: '/university/north-western',
+    }    
   ];
 
 
