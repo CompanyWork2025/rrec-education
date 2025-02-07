@@ -379,7 +379,13 @@ function UniversityDetailPage() {
                         <p className="text-lg mt-4 text-justify">{university.about2}</p>
                     </div>
                     <div className="md:w-1/2 p-4 mt-6 md:mt-0">
-                        <img src={university.aboutImage} alt="About" className="w-full h-64 object-cover rounded-lg shadow-lg" />
+                        <img
+                            src={university.aboutImage}
+                            alt="About"
+                            className="w-full h-64 object-cover rounded-lg shadow-lg"
+                            loading="lazy"
+                        />
+
                     </div>
                 </section>
 

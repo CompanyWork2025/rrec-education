@@ -229,7 +229,7 @@ function UniversityDetailPage() {
 
     return (
         <>
-           <Helmet>
+            <Helmet>
                 <meta charSet="utf-8" />
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                 {/* SEO Meta Tags */}
@@ -303,8 +303,14 @@ function UniversityDetailPage() {
                         <p className="text-lg mt-4 text-justify">{techUniversity.about2}</p>
                     </div>
                     <div className="md:w-1/2 p-4 mt-6 md:mt-0">
-                        <img src={techUniversity.aboutImage} alt="About" className="w-full h-64 object-cover rounded-lg shadow-lg" />
+                        <img
+                            src={techUniversity.aboutImage}
+                            alt="About"
+                            className="w-full h-64 object-cover rounded-lg shadow-lg"
+                            loading="lazy"
+                        />
                     </div>
+
                 </section>
 
                 {/* Admission Section - Left Image, Right Steps */}
