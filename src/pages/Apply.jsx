@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Helmet } from 'react-helmet';
 import arrow from "../assets/arrow.gif";
+import axios from 'axios';
 
 const Apply = () => {
   const [formData, setFormData] = useState({
@@ -22,20 +23,44 @@ const Apply = () => {
     });
   };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    // handle form submission
-    console.log('Form submitted:', formData);
+    
+    try {
+      // Send data to Formspree endpoint
+      const response = await axios.post('https://formspree.io/f/xovjlwdy', formData, {
+        headers: {
+          'Accept': 'application/json'
+        }
+      });
+      
+      if (response.status === 200) {
+        alert('Form submitted successfully!');
+        setFormData({
+          firstName: '',
+          lastName: '',
+          phoneNumber: '',
+          whatsappNumber: '',
+          twelfthMarks: '',
+          neetMarks: '',
+          university: '',
+          message: ''
+        });
+      } else {
+        alert('Something went wrong. Please try again.');
+      }
+    } catch (error) {
+      console.error('Error submitting form: ', error);
+      alert('There was an error submitting the form. Please try again.');
+    }
   };
 
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
-    // Trigger animation on component mount
     const timer = setTimeout(() => {
       setIsVisible(true);
-    }, 100); // Add slight delay for smoother effect
-
+    }, 100);
     return () => clearTimeout(timer);
   }, []);
 
