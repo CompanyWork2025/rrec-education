@@ -2,6 +2,7 @@ import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import { lazy, Suspense } from "react";
 import ScrollToTop from "./components/Scroll";
 import Navbar from "./components/Navbar";
+import About from "./pages/About";
 import Footer from "./components/Footer";
 import Admission from "./pages/Admission";
 import Chatbot from './components/Chatbot'; // Import the Chatbot
@@ -22,6 +23,7 @@ function App() {
       <Suspense fallback={<div className="h-screen flex items-center justify-center">Loading...</div>}>
         <Routes>
           <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
           <Route path="/admission-procedure" element={<Admission />} />
           <Route path="/university/:id" element={<UniversityDetailPage />} />
           <Route path="/tech-university/:id" element={<TechUniversityDetailPage />} />

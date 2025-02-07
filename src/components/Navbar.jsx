@@ -89,7 +89,7 @@ const Navbar = () => {
           {/* Navbar Links - Centered */}
           <div className="hidden md:flex flex-1 justify-center lg:-ml-10 space-x-8">
             <NavLink to="/" className={({ isActive }) => isActive ? 'font-bold text-[#306185]' : 'text-gray-500 hover:text-[#2d4f6b]'}>Home</NavLink>
-            <NavLink to="/admission-procedure" className={({ isActive }) => isActive ? 'font-bold text-[#306185]' : 'text-gray-500 hover:text-[#2d4f6b]'}>Admission Procedure</NavLink>
+            <NavLink to="/about" className={({ isActive }) => isActive ? 'font-bold text-[#306185]' : 'text-gray-500 hover:text-[#2d4f6b]'}>About Us</NavLink>
 
             <div className="flex space-x-4">
               {/* Medical Universities Dropdown */}
@@ -156,7 +156,9 @@ const Navbar = () => {
                 )}
               </div>
             </div>
-
+ 
+            <NavLink to="/admission-procedure" className={({ isActive }) => isActive ? 'font-bold text-[#306185]' : 'text-gray-500 hover:text-[#2d4f6b]'}>Admission Procedure</NavLink>
+             
             <NavLink to="/apply" className={({ isActive }) => isActive ? 'font-bold text-[#306185]' : 'text-gray-500 hover:text-[#2d4f6b]'}>
               Apply Now
             </NavLink>
