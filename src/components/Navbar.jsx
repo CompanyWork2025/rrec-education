@@ -250,23 +250,32 @@ const Navbar = () => {
 
               {openMedicalDropdown && (
                 <div ref={medicalDropdownRef} className="mt-2 w-full bg-white shadow-lg rounded-lg text-gray-800 mx-auto">
-                  <NavLink to="/fee" onClick={handleLinkClick} className={({ isActive }) => isActive ? 'block py-2 px-4 font-bold text-[#306185] bg-gray-100' : 'block py-2 px-4 hover:bg-gray-200 text-center'}>
+                  <NavLink to="/university/rostov" onClick={handleLinkClick} className={({ isActive }) => isActive ? 'block py-2 px-4 font-bold text-[#306185] bg-gray-100' : 'block py-2 px-4 hover:bg-gray-200 text-center'}>
                     Rostov State Medical University
                   </NavLink>
-                  <NavLink to="/blog" onClick={handleLinkClick} className={({ isActive }) => isActive ? 'block py-2 px-4 font-bold text-[#306185] bg-gray-100' : 'block py-2 px-4 hover:bg-gray-200 text-center'}>
+                  <NavLink to="/university/kazan" onClick={handleLinkClick} className={({ isActive }) => isActive ? 'block py-2 px-4 font-bold text-[#306185] bg-gray-100' : 'block py-2 px-4 hover:bg-gray-200 text-center'}>
                     Kazan State Medical University
                   </NavLink>
-                  <NavLink to="/neet-ug-updates" onClick={handleLinkClick} className={({ isActive }) => isActive ? 'block py-2 px-4 font-bold text-[#306185] bg-gray-100' : 'block py-2 px-4 hover:bg-gray-200 text-center'}>
+                  <NavLink to="/university/north-western" onClick={handleLinkClick} className={({ isActive }) => isActive ? 'block py-2 px-4 font-bold text-[#306185] bg-gray-100' : 'block py-2 px-4 hover:bg-gray-200 text-center'}>
                     North-western State Medical University
                   </NavLink>
-                  <NavLink to="/faqs" onClick={handleLinkClick} className={({ isActive }) => isActive ? 'block py-2 px-4 font-bold text-[#306185] bg-gray-100' : 'block py-2 px-4 hover:bg-gray-200 text-center'}>
+                  <NavLink to="/university/kazan-federal" onClick={handleLinkClick} className={({ isActive }) => isActive ? 'block py-2 px-4 font-bold text-[#306185] bg-gray-100' : 'block py-2 px-4 hover:bg-gray-200 text-center'}>
                     Kazan Federal University
                   </NavLink>
-                  <NavLink to="/upcoming-events" onClick={handleLinkClick} className={({ isActive }) => isActive ? 'block py-2 px-4 font-bold text-[#306185] bg-gray-100' : 'block py-2 px-4 hover:bg-gray-200 text-center'}>
+                  <NavLink to="/university/petrozavodsk" onClick={handleLinkClick} className={({ isActive }) => isActive ? 'block py-2 px-4 font-bold text-[#306185] bg-gray-100' : 'block py-2 px-4 hover:bg-gray-200 text-center'}>
                     Petrozavodsk State University
                   </NavLink>
-                  <NavLink to="/nmc-regulations" onClick={handleLinkClick} className={({ isActive }) => isActive ? 'block py-2 px-4 font-bold text-[#306185] bg-gray-100' : 'block py-2 px-4 hover:bg-gray-200 text-center'}>
+                  <NavLink to="/university/yaroslavl" onClick={handleLinkClick} className={({ isActive }) => isActive ? 'block py-2 px-4 font-bold text-[#306185] bg-gray-100' : 'block py-2 px-4 hover:bg-gray-200 text-center'}>
                     Yaroslavl State Medical University
+                  </NavLink>
+                  <NavLink to="/university/izhevsk" onClick={handleLinkClick} className={({ isActive }) => isActive ? 'block py-2 px-4 font-bold text-[#306185] bg-gray-100' : 'block py-2 px-4 hover:bg-gray-200 text-center'}>
+                    Izhevsk State Medical Academy
+                  </NavLink>
+                  <NavLink to="/university/peoples-friendship" onClick={handleLinkClick} className={({ isActive }) => isActive ? 'block py-2 px-4 font-bold text-[#306185] bg-gray-100' : 'block py-2 px-4 hover:bg-gray-200 text-center'}>
+                    Peoples’ Friendship University
+                  </NavLink>
+                  <NavLink to="/university/crimea" onClick={handleLinkClick} className={({ isActive }) => isActive ? 'block py-2 px-4 font-bold text-[#306185] bg-gray-100' : 'block py-2 px-4 hover:bg-gray-200 text-center'}>
+                    Crimea Federal University
                   </NavLink>
                 </div>
               )}
@@ -281,22 +290,22 @@ const Navbar = () => {
 
               {openTechnicalDropdown && (
                 <div ref={technicalDropdownRef} className="mt-2 w-full bg-white shadow-lg rounded-lg text-gray-800 mx-auto">
-                  <NavLink to="/fee" onClick={handleLinkClick} className={({ isActive }) => isActive ? 'block py-2 px-4 font-bold text-[#306185] bg-gray-100' : 'block py-2 px-4 hover:bg-gray-200 text-center'}>
+                  <NavLink to="/tech-university/don-state-technical-university" onClick={handleLinkClick} className={({ isActive }) => isActive ? 'block py-2 px-4 font-bold text-[#306185] bg-gray-100' : 'block py-2 px-4 hover:bg-gray-200 text-center'}>
                     Don State Technical University
                   </NavLink>
-                  <NavLink to="/blog" onClick={handleLinkClick} className={({ isActive }) => isActive ? 'block py-2 px-4 font-bold text-[#306185] bg-gray-100' : 'block py-2 px-4 hover:bg-gray-200 text-center'}>
+                  <NavLink to="/tech-university/southern-federal-university" onClick={handleLinkClick} className={({ isActive }) => isActive ? 'block py-2 px-4 font-bold text-[#306185] bg-gray-100' : 'block py-2 px-4 hover:bg-gray-200 text-center'}>
                     Southern Federal University
                   </NavLink>
-                  <NavLink to="/neet-ug-updates" onClick={handleLinkClick} className={({ isActive }) => isActive ? 'block py-2 px-4 font-bold text-[#306185] bg-gray-100' : 'block py-2 px-4 hover:bg-gray-200 text-center'}>
-                    Rostov State University Of Economics, Russia
+                  <NavLink to="/tech-university/rostov-state-economics" onClick={handleLinkClick} className={({ isActive }) => isActive ? 'block py-2 px-4 font-bold text-[#306185] bg-gray-100' : 'block py-2 px-4 hover:bg-gray-200 text-center'}>
+                    Rostov State University Of Economics
                   </NavLink>
-                  <NavLink to="/faqs" onClick={handleLinkClick} className={({ isActive }) => isActive ? 'block py-2 px-4 font-bold text-[#306185] bg-gray-100' : 'block py-2 px-4 hover:bg-gray-200 text-center'}>
+                  <NavLink to="/tech-university/kazan-federal-university" onClick={handleLinkClick} className={({ isActive }) => isActive ? 'block py-2 px-4 font-bold text-[#306185] bg-gray-100' : 'block py-2 px-4 hover:bg-gray-200 text-center'}>
                     Kazan Federal University
                   </NavLink>
-                  <NavLink to="/upcoming-events" onClick={handleLinkClick} className={({ isActive }) => isActive ? 'block py-2 px-4 font-bold text-[#306185] bg-gray-100' : 'block py-2 px-4 hover:bg-gray-200 text-center'}>
+                  <NavLink to="/tech-university/ukhta-state-technical-university" onClick={handleLinkClick} className={({ isActive }) => isActive ? 'block py-2 px-4 font-bold text-[#306185] bg-gray-100' : 'block py-2 px-4 hover:bg-gray-200 text-center'}>
                     Ukhta State Technical University
                   </NavLink>
-                  <NavLink to="/nmc-regulations" onClick={handleLinkClick} className={({ isActive }) => isActive ? 'block py-2 px-4 font-bold text-[#306185] bg-gray-100' : 'block py-2 px-4 hover:bg-gray-200 text-center'}>
+                  <NavLink to="/tech-university/udmurt-state-university" onClick={handleLinkClick} className={({ isActive }) => isActive ? 'block py-2 px-4 font-bold text-[#306185] bg-gray-100' : 'block py-2 px-4 hover:bg-gray-200 text-center'}>
                     Udmurt State University
                   </NavLink>
                 </div>

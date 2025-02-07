@@ -336,10 +336,9 @@ function UniversityDetailPage() {
                 </div>
                 {/* Hero Content */}
                 <div
-                    className={`flex flex-col items-center mt-24 z-10 transition-all duration-1000 ease-in-out ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
-                        }`}
+                    className={`flex flex-col items-center mt-24 z-10 transition-all duration-1000 ease-in-out ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
                 >
-                    <h1 className="text-2xl md:text-5xl font-semibold drop-shadow-lg">
+                    <h1 className="text-2xl md:text-5xl font-semibold drop-shadow-lg text-center">
                         {university.name}
                     </h1>
                     {/* GIF Below Text */}
@@ -357,7 +356,7 @@ function UniversityDetailPage() {
 
                 {/* Introduction Section */}
                 <section className="mt-6 text-center">
-                    <h2 className="text-3xl font-semibold">{university.name}</h2>
+                    <h2 className="text-3xl md:text-4xl font-semibold">{university.name}</h2>
                     <p className="text-lg mt-4">{university.intro}</p>
                 </section>
 
@@ -368,7 +367,7 @@ function UniversityDetailPage() {
                         <p className="text-lg mt-4 text-justify">{university.about}</p>
                         <p className="text-lg mt-4 text-justify">{university.about2}</p>
                     </div>
-                    <div className="md:w-1/2 p-4">
+                    <div className="md:w-1/2 p-4 mt-6 md:mt-0">
                         <img src={university.aboutImage} alt="About" className="w-full h-64 object-cover rounded-lg shadow-lg" />
                     </div>
                 </section>
@@ -376,11 +375,11 @@ function UniversityDetailPage() {
                 {/* Admission Section - Left Image, Right Steps */}
                 <section className="mt-10 flex flex-col md:flex-row items-center">
                     {/* Left: Admission Image */}
-                    <div className="md:w-1/2 p-4 order-2 md:order-1">
+                    <div className="md:w-1/2 p-4 order-2 md:order-1 mb-6 md:mb-0">
                         <img
                             src="https://amratpal.com/wp-content/uploads/2020/12/procedure.png"
                             alt="Admission"
-                            className="w-full h-96 lg:h-[500px] object-fit"
+                            className="w-full h-64 lg:h-[500px] object-fit"
                         />
                     </div>
 
@@ -395,7 +394,6 @@ function UniversityDetailPage() {
                                         {index + 1}
                                     </div>
 
-
                                     {/* Step Content */}
                                     <div>
                                         <h3 className="text-lg font-semibold text-blue-700">{step.step}</h3>
@@ -407,12 +405,11 @@ function UniversityDetailPage() {
                     </div>
                 </section>
 
-
                 {/* Bottom Banner Section */}
                 <section className="mt-10 relative">
                     <img src={university.bottomBanner} alt="University Banner" className="w-full h-52 object-cover rounded-lg shadow-lg" />
                     <div className="absolute inset-0 flex flex-col items-center justify-center bg-black bg-opacity-50 rounded-lg p-6">
-                        <h2 className="text-white text-2xl lg:text-4xl font-bold text-center">
+                        <h2 className="text-white text-xl lg:text-4xl font-bold text-center">
                             {university.bottomText}
                         </h2>
 
@@ -420,14 +417,15 @@ function UniversityDetailPage() {
                         <Link
                             to="/apply"
                             className="mt-6 px-8 py-3 text-lg font-semibold rounded-lg shadow-lg 
-                       bg-gradient-to-r from-yellow-400 to-orange-500 text-white 
-                       hover:from-orange-500 hover:to-yellow-400 transition-all duration-300 transform hover:scale-105"
+                    bg-gradient-to-r from-yellow-400 to-orange-500 text-white 
+                    hover:from-orange-500 hover:to-yellow-400 transition-all duration-300 transform hover:scale-105"
                         >
                             Apply Now
                         </Link>
                     </div>
                 </section>
             </div>
+
         </>
     );
 }
