@@ -1,5 +1,6 @@
 import { useEffect, useRef } from 'react';
 import logo1 from '../../assets/rostov.png';
+import { Link } from 'react-router-dom';
 import img from "../../assets/np.png";
 
 const Card = () => {
@@ -103,12 +104,12 @@ const Card = () => {
                 <p className="text-white text-lg font-bold">{card.backText}</p>
                 {/* Button for Navigation */}
                 <div className="mt-4 text-center">
-                  <a
-                    href={card.link}
+                <Link
+                    to={card.link}
                     className="bg-white text-orange-600 font-bold py-2 px-4 rounded hover:bg-orange-600 hover:text-white transition duration-300"
                   >
                     Learn More
-                  </a>
+                  </Link>
                 </div>
               </div>
             </div>
