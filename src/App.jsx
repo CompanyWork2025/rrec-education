@@ -15,7 +15,7 @@ const Contact = lazy(() => import("./pages/Contact"));
 const Apply = lazy(() => import("./pages/Apply"));
 
 function App() {
-  return (
+  return ( 
     <Router>
       <ScrollToTop />
       <Navbar />

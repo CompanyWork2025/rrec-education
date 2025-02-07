@@ -90,6 +90,12 @@ const ContactUs = () => {
                             <a href="http://www.rrec.com.ru" target="_blank" rel="noopener noreferrer" className="text-blue-500">www.rrec.com.ru</a>,
                             <a href="http://www.studyinrussia.in" target="_blank" rel="noopener noreferrer" className="text-blue-500">www.studyinrussia.in</a>
                         </p>
+                        <iframe
+                            className="w-full h-48 mt-4 rounded-lg"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3499.8652879979413!2d77.1475991755031!3d28.693676075631423!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d03d92f45f1bb%3A0xf2fcd5bfa7590c08!2sThe%20RREC%20Team-MBBS%20in%20Russia%20%7C%20Direct%20Official%20Admission%20Partners%20%7C%20Top%20Medical%2C%20Technical%2C%20Federal%20Universities%20of%20Russia.!5e0!3m2!1sen!2sin!4v1737455159513!5m2!1sen!2sin"
+                            allowFullScreen=""
+                            loading="lazy"
+                        ></iframe>
                     </div>
 
                     {/* Russia Office Card */}
@@ -100,6 +106,12 @@ const ContactUs = () => {
                         <p><strong>RREC having representatives in over 28 countries across the globe.</strong></p>
                         <p><strong>RREC is the authorized representative of Top Medical & Technical Universities of Russia for Asian, African, Arabian & European students.</strong></p>
                         <p>Students can apply with us for Direct Admissions for Study in Russia!</p>
+                        <iframe
+                            className="w-full h-48 mt-4 rounded-lg"
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2687.4629928300514!2d39.7022314156478!3d47.23135097916083!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40e3b9a3f9e2b5f7%3A0x3f3b3b3b3b3b3b3b!2sSuvorova%2074A%2C%20Rostov-on-Don%2C%20Russia!5e0!3m2!1sen!2sru!4v1611220228221!5m2!1sen!2sru"
+                            allowFullScreen=""
+                            loading="lazy"
+                        ></iframe>
                     </div>
                 </div>
 
