@@ -25,7 +25,7 @@ const Apply = () => {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    
+
     try {
       // Send data to Formspree endpoint
       const response = await axios.post('https://formspree.io/f/xovjlwdy', formData, {
@@ -33,7 +33,7 @@ const Apply = () => {
           'Accept': 'application/json'
         }
       });
-      
+
       if (response.status === 200) {
         alert('Form submitted successfully!');
         setFormData({
@@ -54,6 +54,42 @@ const Apply = () => {
       alert('There was an error submitting the form. Please try again.');
     }
   };
+
+  const [universityType, setUniversityType] = useState("");
+
+  const medicalUniversities = [
+    "Rostov State Medical University",
+    "Ural State Medical University",
+    "Kemerovo State Medical University",
+    "North-Western State Medical University",
+    "Crimea Federal University - Medical Faculty",
+    "Kursk State Medical University",
+    "Bashkir State Medical University",
+    "Kazan State Medical University",
+    "Maikop State Technological University - Medical Faculty",
+    "Volgograd State Medical University",
+    "Perm State Medical University",
+    "Orenburg State Medical University",
+    "Tver State Medical University",
+    "Saint Petersburg State Pediatric Medical University",
+    "Kazan Federal University",
+    "Synergy University - Medical Faculty"
+  ];
+
+  const technicalUniversities = [
+    "Rostov State Transport University",
+    "Volgograd State Technical University",
+    "Saint Petersburg Polytechnical University",
+    "Synergy University Moscow",
+    "University of Science and Technology MISiS",
+    "Ural Federal University",
+    "Lomonosov Moscow State University",
+    "Crimea Federal University",
+    "Moscow State Pedagogical University (MPGU)",
+    "The Pushkin State Russian Language Institute Moscow",
+    "Russian State University for the Humanities Moscow"
+  ];
+  
 
   const [isVisible, setIsVisible] = useState(false);
 
@@ -212,31 +248,45 @@ const Apply = () => {
             {/* University Dropdown */}
             <div className="mb-6">
               <label htmlFor="university" className="block text-md font-medium text-gray-700">Select University</label>
-              <select
-                id="university"
-                name="university"
-                value={formData.university}
-                onChange={handleChange}
-                className="w-full p-2 mt-2 border-2 border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition duration-300"
-                required
-              >
-                <option value="">Select a university</option>
-                <option value="rostov">Rostov State Medical University</option>
-                <option value="kazan">Kazan State Medical University</option>
-                <option value="northwestern">North-Western State Medical University</option>
-                <option value="kazan_federal">Kazan Federal University</option>
-                <option value="petrozavodsk">Petrozavodsk State University</option>
-                <option value="yaroslavl">Yaroslavl State Medical University</option>
-                <option value="izhevsk">Izhevsk State Medical Academy</option>
-                <option value="ruden">Peoples’ Friendship University</option>
-                <option value="crimea_federal">Crimea Federal University</option>
-                <option value="southern_federal">Southern Federal University</option>
-                <option value="don_technical">Don State Technical University</option>
-                <option value="rostov_economics">Rostov State University Of Economics</option>
-                <option value="ukhta">Ukhta State Technical University</option>
-                <option value="udmurt">Udmurt State University</option>
-              </select>
+              <div className="flex space-x-4 mt-4 mb-4">
+                <button
+                  className={`px-6 py-2 rounded-lg ${universityType === "medical" ? "bg-blue-500 text-white" : "bg-gray-300"}`}
+                  onClick={() => setUniversityType("medical")}
+                >
+                  Medical University
+                </button>
+                <button
+                  className={`px-6 py-2 rounded-lg ${universityType === "technical" ? "bg-blue-500 text-white" : "bg-gray-300"}`}
+                  onClick={() => setUniversityType("technical")}
+                >
+                  Technical University
+                </button>
+              </div>
+
+              {/* University Dropdown */}
+              {universityType && (
+                <select
+                  id="university"
+                  name="university"
+                  value={formData.university}
+                  onChange={handleChange}
+                  className="w-full p-2 mt-2 border-2 border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition duration-300"
+                  required
+                >
+                  <option value="" disabled>Select a University</option>
+                  {universityType === "medical" ? (
+                    medicalUniversities.map((university, index) => (
+                      <option key={index} value={university}>{university}</option>
+                    ))
+                  ) : (
+                    technicalUniversities.map((university, index) => (
+                      <option key={index} value={university}>{university}</option>
+                    ))
+                  )}
+                </select>
+              )}
             </div>
+
 
             {/* Message */}
             <div className="mb-6">
