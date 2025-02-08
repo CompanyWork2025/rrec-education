@@ -83,7 +83,7 @@ const Navbar = () => {
 
           {/* Logo */}
           <NavLink to="/" className="flex items-center space-x-6">
-            <img src={logo} className="w-28 h-14 lg:w-60 lg:h-20 lg:-ml-16" alt="Logo" />
+            <img src={logo} className="w-28 h-14 lg:w-56 lg:h-20 lg:-ml-16" alt="Logo" />
           </NavLink>
 
           {/* Navbar Links - Centered */}
