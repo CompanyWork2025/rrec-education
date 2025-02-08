@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import arrow from "../assets/arrow.gif";
 import { Helmet } from 'react-helmet';
-import { FaPhone, FaEnvelope, FaGlobe } from 'react-icons/fa'; // For adding icons
+import { FaLink, FaPhoneAlt, FaEnvelope, FaMapMarkerAlt } from 'react-icons/fa'; // For adding icons
 
 const ContactUs = () => {
     const [isVisible, setIsVisible] = useState(false);
@@ -17,8 +17,8 @@ const ContactUs = () => {
 
     return (
         <>
-             {/* Meta Tags for SEO */}
-             <Helmet>
+            {/* Meta Tags for SEO */}
+            <Helmet>
                 <meta charSet="UTF-8" />
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                 <meta name="description" content="Get in touch with Russian Educational Consultants. Find office locations, contact details, and working hours. Apply now to study in Russia." />
@@ -66,69 +66,125 @@ const ContactUs = () => {
 
             <div className="flex flex-col items-center py-10 bg-gray-100">
                 {/* Header */}
-                <h1 className="text-3xl font-bold text-center mb-8 px-4">Get in Touch with Us!</h1>
+                <h1 className="text-2xl md:text-4xl font-extrabold text-center mb-8 px-4 text-transparent bg-clip-text bg-gradient-to-r from-purple-600 to-blue-500 animate__animated animate__fadeIn animate__delay-1s">
+                    Get in Touch with Us!
+                </h1>
+
 
                 {/* Flex container for left and right cards */}
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-4 w-full max-w-screen-xl mb-6 px-4">
                     {/* India Office Card */}
                     <div className="bg-white shadow-lg rounded-lg p-6 transition-transform transform hover:scale-105">
-                        <h2 className="text-2xl font-semibold mb-4">India Office</h2>
-                        <p><strong>Location:</strong> Pitampura, New Delhi</p>
-                        <p><strong>Contact Numbers:</strong> +91-7042284508, +91-7042284509</p>
-                        <p><strong>Emails (for students):</strong></p>
-                        <ul className="list-disc ml-6 space-y-1">
-                            <li className="flex items-center">
-                                <FaEnvelope className="mr-2" />
-                                rrec.educonsultants@gmail.com
-                            </li>
-                            <li className="flex items-center">
-                                <FaEnvelope className="mr-2" />
-                                contact@rrecrussia.com
-                            </li>
-                        </ul>
-                        <p><strong>Web:</strong>
-                            <a href="http://www.rrec.com.ru" target="_blank" rel="noopener noreferrer" className="text-blue-500">www.rrec.com.ru</a>,
-                            <a href="http://www.studyinrussia.in" target="_blank" rel="noopener noreferrer" className="text-blue-500">www.studyinrussia.in</a>
-                        </p>
-                        <iframe
-                            className="w-full h-48 mt-4 rounded-lg"
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3499.8652879979413!2d77.1475991755031!3d28.693676075631423!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d03d92f45f1bb%3A0xf2fcd5bfa7590c08!2sThe%20RREC%20Team-MBBS%20in%20Russia%20%7C%20Direct%20Official%20Admission%20Partners%20%7C%20Top%20Medical%2C%20Technical%2C%20Federal%20Universities%20of%20Russia.!5e0!3m2!1sen!2sin!4v1737455159513!5m2!1sen!2sin"
-                            allowFullScreen=""
-                            loading="lazy"
-                        ></iframe>
+                        <div className="flex items-center bg-blue-500 px-4 text-white py-2 rounded-t-lg">
+                            <FaMapMarkerAlt className="mr-3" />
+                            <h2 className="text-xl font-semibold">India Office</h2>
+                        </div>
+                        <div className="mt-4">
+                            <div className="grid grid-cols-2 gap-4">
+                                <div className="flex items-center space-x-4">
+                                    <FaMapMarkerAlt className="text-blue-500" />
+                                    <p><strong>Location:</strong><br /> Pitampura, New Delhi</p>
+                                </div>
+                                <div className="col-span-2">
+                                    <div className="flex items-center space-x-4">
+                                        <FaPhoneAlt className="text-blue-500" />
+                                        <p><strong>Contact Numbers:</strong><br /> +91-7042284508, +91-7042284509</p>
+                                    </div>
+                                </div>
+                                <div className="col-span-2">
+                                    <div className="flex items-start space-x-4">
+                                        <FaEnvelope className="text-blue-500 mt-1" />
+                                        <div>
+                                            <p><strong>Emails (for students):</strong></p>
+                                            <ul className="list-disc ml-6 space-y-1">
+                                                <li>rrec.educonsultants@gmail.com</li>
+                                                <li>contact@rrecrussia.com</li>
+                                            </ul>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div className="flex items-center space-x-4 col-span-2">
+                                    <FaLink className="text-blue-500" />
+                                    <p><strong>Web:</strong><br />
+                                        <a href="http://www.rrec.com.ru" target="_blank" rel="noopener noreferrer" className="text-blue-500">www.rrec.com.ru</a>,
+                                        <br />  <a href="http://www.studyinrussia.in" target="_blank" rel="noopener noreferrer" className="text-blue-500">www.studyinrussia.in</a>
+                                    </p>
+                                </div>
+                            </div>
+                            <iframe
+                                className="w-full h-48 mt-4 rounded-lg"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3499.8652879979413!2d77.1475991755031!3d28.693676075631423!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x390d03d92f45f1bb%3A0xf2fcd5bfa7590c08!2sThe%20RREC%20Team-MBBS%20in%20Russia%20%7C%20Direct%20Official%20Admission%20Partners%20%7C%20Top%20Medical%2C%20Technical%2C%20Federal%20Universities%20of%20Russia.!5e0!3m2!1sen!2sin!4v1737455159513!5m2!1sen!2sin"
+                                allowFullScreen=""
+                                loading="lazy"
+                            ></iframe>
+                        </div>
                     </div>
 
                     {/* Russia Office Card */}
                     <div className="bg-white shadow-lg rounded-lg p-6 transition-transform transform hover:scale-105">
-                        <h2 className="text-2xl font-semibold mb-4">Russia Office</h2>
-                        <p><strong>Location:</strong> Suvorova 74-A, Rostov-on-Don, Russia</p>
-                        <p><strong>Contact Numbers:</strong> +79604430042</p>
-                        <p><strong>RREC having representatives in over 28 countries across the globe.</strong></p>
-                        <p><strong>RREC is the authorized representative of Top Medical & Technical Universities of Russia for Asian, African, Arabian & European students.</strong></p>
-                        <p>Students can apply with us for Direct Admissions for Study in Russia!</p>
-                        <iframe
-                            className="w-full h-48 mt-4 rounded-lg"
-                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2687.4629928300514!2d39.7022314156478!3d47.23135097916083!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40e3b9a3f9e2b5f7%3A0x3f3b3b3b3b3b3b3b!2sSuvorova%2074A%2C%20Rostov-on-Don%2C%20Russia!5e0!3m2!1sen!2sru!4v1611220228221!5m2!1sen!2sru"
-                            allowFullScreen=""
-                            loading="lazy"
-                        ></iframe>
+                        <div className="flex items-center bg-green-500 px-4 text-white py-2 rounded-t-lg">
+                            <FaMapMarkerAlt className="mr-3" />
+                            <h2 className="text-xl font-semibold">Russia Office</h2>
+                        </div>
+                        <div className="mt-4">
+                            <div className="grid grid-cols-2 gap-4">
+                                {/* Location */}
+                                <div className="flex items-center space-x-4">
+                                    <FaMapMarkerAlt className="text-blue-500" />
+                                    <p><strong>Location:</strong><br /> Suvorova 74-A, Rostov-on-Don, Russia</p>
+                                </div>
+                                {/* Contact Numbers */}
+                                <div className="col-span-2">
+                                    <div className="flex items-center space-x-4">
+                                        <FaPhoneAlt className="text-blue-500" />
+                                        <p><strong>Contact Numbers:</strong><br /> +79604430042</p>
+                                    </div>
+                                </div>
+
+                                {/* Website Links */}
+                                <div className="flex items-center space-x-4 col-span-2">
+                                    <FaLink className="text-blue-500" />
+                                    <p><strong>Web:</strong><br />
+                                        <a href="http://www.rrec.com.ru" target="_blank" rel="noopener noreferrer" className="text-blue-500">www.rrec.com.ru</a>,
+                                        <br />  <a href="http://www.studyinrussia.in" target="_blank" rel="noopener noreferrer" className="text-blue-500">www.studyinrussia.in</a>
+                                    </p>
+                                </div>
+                            </div>
+                            {/* Map */}
+                            <iframe
+                                className="w-full h-56 mt-14 rounded-lg"
+                                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2687.4629928300514!2d39.7022314156478!3d47.23135097916083!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40e3b9a3f9e2b5f7%3A0x3f3b3b3b3b3b3b3b!2sSuvorova%2074A%2C%20Rostov-on-Don%2C%20Russia!5e0!3m2!1sen!2sru!4v1611220228221!5m2!1sen!2sru"
+                                allowFullScreen=""
+                                loading="lazy"
+                            ></iframe>
+                        </div>
                     </div>
                 </div>
 
+
                 {/* Office Working Hours */}
-                <div className="w-full max-w-screen-xl bg-white shadow-lg rounded-lg p-6 mb-6 px-4">
-                    <h2 className="text-2xl font-semibold mb-4">Office Working Hours</h2>
-                    <p><strong>Monday-Friday:</strong> 9:00 AM – 6:00 PM</p>
-                    <p><strong>Saturday:</strong> 10:00 AM – 4:00 PM</p>
-                    <p><strong>Sunday:</strong> Holiday</p>
-                    <p><strong>Support, Help, and Assistance:</strong> 24 hours</p>
+                <div className="w-full max-w-screen-xl bg-white shadow-lg rounded-lg p-6 mb-6 px-4 transition-transform transform hover:scale-105 hover:shadow-xl">
+                    <h2 className="text-2xl font-semibold mb-4 text-center text-gray-800">Office Working Hours</h2>
+                    <div className="space-y-2 text-lg text-gray-600">
+                        <p><strong>Monday-Friday:</strong> 9:00 AM – 6:00 PM</p>
+                        <p><strong>Saturday:</strong> 10:00 AM – 4:00 PM</p>
+                        <p><strong>Sunday:</strong> Closed</p>
+                        <p><strong>Support, Help, and Assistance:</strong> 24 hours (via email or phone)</p>
+                    </div>
                 </div>
 
                 {/* Call to Action with Blue Background */}
-                <div className="w-full max-w-screen-xl bg-blue-500 text-white shadow-lg rounded-lg p-6 px-4">
-                    <h2 className="text-2xl font-semibold mb-4">Study in Russia with Reliable Russian Educational Consultants</h2>
-                    <p className="text-lg mb-4">Study Medicine in Russia with RREC</p>
-                    <a href="/apply" className="mt-4 inline-block bg-yellow-500 text-black py-2 px-6 rounded-lg text-lg font-semibold hover:bg-yellow-600 transition-colors w-full sm:w-auto text-center">Apply Now</a>
+                <div className="w-full max-w-screen-xl bg-gradient-to-r from-blue-500 to-blue-700 text-white shadow-lg rounded-lg p-6 mb-6 px-4 transition-all transform hover:scale-105 hover:shadow-xl">
+                    <h2 className="text-2xl font-semibold mb-4 text-center text-white">Study in Russia with Reliable Russian Educational Consultants</h2>
+                    <p className="text-lg mb-4 text-center text-white opacity-90">Take the first step towards a successful career in Medicine or Engineering. Study in Russia with RREC.</p>
+                    <div className="text-center">
+                        <a
+                            href="/apply"
+                            className="mt-4 inline-block bg-yellow-500 text-black py-3 px-8 rounded-lg text-lg font-semibold hover:bg-yellow-600 transition-colors w-full sm:w-auto"
+                        >
+                            Apply Now
+                        </a>
+                    </div>
                 </div>
             </div>
         </>
