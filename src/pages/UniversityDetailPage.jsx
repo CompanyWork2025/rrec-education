@@ -40,270 +40,503 @@ const universities = [
         bottomText: "Join one of the best medical universities in Russia today!",
     },
     {
-        id: "kazan",
-        name: "Kazan State Medical University",
-        intro: "A prestigious medical institution providing globally recognized medical education.",
-        about: "Kazan State Medical University (KSMU) is one of the oldest and most reputed medical universities in Russia. Established in 1814, it is recognized by WHO, MCI, and other major medical councils worldwide. KSMU is known for its strong research programs, advanced teaching methods, and modern medical infrastructure, attracting students from across the globe.",
-        about2: "The university offers undergraduate and postgraduate programs in medicine, dentistry, and pharmacy. With highly qualified faculty and international collaborations, KSMU provides a student-friendly environment that nurtures medical excellence.",
-        aboutImage: "https://entermedia.io/wp-content/uploads/2023/10/2-Zdanie-Medinstituta.jpg",
+        id: "ural",
+        name: "Ural State Medical University",
+        intro: "A prestigious medical institution in the Ural region with a strong academic reputation.",
+        about: "Ural State Medical University (USMU) is a government-run medical institution located in Yekaterinburg. It is recognized by the World Health Organization (WHO) and offers high-quality medical education for international students.",
+        about2: "USMU provides a robust learning environment with modern laboratories, extensive clinical exposure, and experienced faculty members dedicated to fostering the next generation of healthcare professionals.",
+        aboutImage: "https://yourchoice.re/wp-content/uploads/2022/05/%D8%AC%D8%A7%D9%85%D8%B9%D8%A9-%D8%A7%D9%84%D8%A7%D9%88%D8%B1%D8%A7%D9%84-%D8%A7%D9%84%D8%B7%D8%A8%D9%8A%D8%A9-%D8%A7%D9%84%D8%AD%D9%83%D9%88%D9%85%D9%8A-%D8%A9.png",
         admissionSteps: [
             {
-                step: "Step 1: Submit Application",
-                description: "Fill out the online application form and upload required documents, including academic certificates and passport copy.",
+                step: "Step 1: Application & Eligibility",
+                description: "Submit your application along with the required academic documents, ensuring you meet the eligibility criteria.",
             },
             {
-                step: "Step 2: Invitation Letter",
-                description: "Once the documents are verified, you will receive an official invitation letter from KSMU within 10 days.",
+                step: "Step 2: Receive Invitation Letter",
+                description: "After approval, an invitation letter will be issued within 7-10 working days.",
             },
             {
                 step: "Step 3: Visa Processing",
-                description: "With the invitation letter, apply for a student visa at the Russian Embassy in your country. The process takes 2-3 weeks.",
+                description: "Apply for a student visa using the invitation letter and medical reports.",
             },
             {
-                step: "Step 4: Travel to Kazan",
-                description: "Book your flight and notify the university for pickup assistance. Make sure to carry all necessary documents.",
+                step: "Step 4: Travel & Arrival",
+                description: "Book your travel and inform the university about your arrival schedule.",
             },
             {
-                step: "Step 5: University Enrollment",
-                description: "Complete registration at the university, submit medical reports, and attend the orientation program before beginning classes.",
+                step: "Step 5: University Registration",
+                description: "Complete the registration, medical checkups, and document verification before beginning classes.",
             },
         ],
-        admissionImage: "/images/kazan-admission.jpg",
-        bottomBanner: "https://mir-cdn.behance.net/v1/rendition/project_modules/max_3840/a31f24174446019.64a2deea7d659.png",
-        bottomText: "Study at one of the most prestigious medical universities in Russia!",
+        admissionImage: "/images/ural-admission.jpg",
+        bottomBanner: "https://www.edufever.com/wp-content/uploads/2021/10/Ural-State-Medical-University-Russia.webp",
+        bottomText: "Start your medical journey at Ural State Medical University!",
     },
     {
-        id: "crimea",
-        name: "Crimea Federal University",
-        intro: "A top-tier medical university offering affordable and high-quality education.",
-        about: "Crimea Federal University (CFU) is one of the most well-respected medical universities in Russia, offering top-quality education to international students. Established in 1918, CFU is recognized by WHO, MCI, and other international medical councils. The university provides excellent academic programs, well-equipped laboratories, and modern medical research facilities.",
-        about2: "CFU offers a unique learning experience with an emphasis on practical training, research, and innovation. The university is an excellent choice for students looking for affordable yet high-standard medical education.",
-        aboutImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/8/81/Simferopol_04-14_img06_University.jpg/1200px-Simferopol_04-14_img06_University.jpg",
+        id: "kemerovo",
+        name: "Kemerovo State Medical University",
+        intro: "A well-respected medical university known for its research and academic excellence.",
+        about: "Kemerovo State Medical University offers specialized medical training with a strong focus on research and clinical practice. It is recognized by WHO and other international organizations.",
+        about2: "The university provides students with access to advanced medical technology and hands-on training in its affiliated hospitals.",
+        aboutImage: "https://flyfuture.in/admin/services/1659952140.jpg",
         admissionSteps: [
             {
-                step: "Step 1: Application & Documentation",
-                description: "Apply online and submit academic documents, passport copy, and NEET qualification (if applicable).",
+                step: "Step 1: Application & Eligibility",
+                description: "Submit your application with academic transcripts and necessary certifications.",
             },
             {
-                step: "Step 2: Invitation Letter",
-                description: "After successful verification, receive the invitation letter within 10 working days.",
+                step: "Step 2: Receive Invitation Letter",
+                description: "Successful applicants will receive an invitation letter within 10 days.",
             },
             {
                 step: "Step 3: Visa Processing",
-                description: "Apply for a student visa with the required documents, including the invitation letter and medical fitness reports.",
+                description: "Apply for a student visa at the nearest Russian consulate.",
             },
             {
-                step: "Step 4: Travel & Accommodation",
-                description: "Book your flight and inform the university about your arrival. CFU provides hostel accommodation for international students.",
+                step: "Step 4: Travel & Arrival",
+                description: "Arrange your travel and coordinate your arrival details with the university.",
             },
             {
-                step: "Step 5: Registration & Orientation",
-                description: "Complete university formalities, including registration, medical tests, and orientation before starting your classes.",
+                step: "Step 5: University Registration",
+                description: "Upon arrival, complete all necessary documentation and registration formalities.",
             },
         ],
-        admissionImage: "/images/crimea-admission.jpg",
-        bottomBanner: "https://avatars.mds.yandex.net/i?id=37e43d0366c3cc89b7c753908d90689c_l-8343045-images-thumbs&n=13",
-        bottomText: "Your gateway to a successful medical career starts here!",
+        admissionImage: "/images/kemerovo-admission.jpg",
+        bottomBanner: "https://hedclub.com/data/universities/364/main_image/88ic2R2jm33YVyuMHLXu.jpg",
+        bottomText: "Study at Kemerovo State Medical University for a world-class education!",
     },
     {
         id: "north-western",
         name: "North-Western State Medical University",
-        intro: "A leading Russian medical university known for innovation in medical research.",
-        about: "North-Western State Medical University is a premier institution offering high-quality medical education in Russia. It is recognized for its advanced research in various medical fields and its international collaborations.",
-        about2: "Founded in 1907, North-Western State Medical University provides excellent opportunities for students in medicine, dentistry, and pharmacy. It has a long-standing reputation for training successful medical professionals.",
-        aboutImage: "https://luckclub.ru/images/luckclub/2019/01/5-33.jpg",
+        intro: "A prestigious medical university known for its excellent research and training programs.",
+        about: "North-Western State Medical University is one of the leading medical universities in Russia, located in Saint Petersburg. The university offers a comprehensive range of medical programs and has strong international partnerships for research and student exchange. It has a reputation for producing skilled doctors and specialists in various medical fields.",
+        about2: "Founded in 1994, the university is recognized for its advanced educational methods and research in medical science. It offers modern teaching facilities, well-equipped laboratories, and extensive clinical practice opportunities.",
+        aboutImage: "https://welcometostudy.com/sites/default/files/higher-education/137/north-westernstatemedicaluniversitynamedafteriimechnikov.jpg",
         admissionSteps: [
-            {
-                step: "Step 1: Submit Application",
-                description: "Submit your online application along with necessary documents including academic certificates, passport, and NEET scores (if applicable).",
-            },
-            {
-                step: "Step 2: Invitation Letter",
-                description: "Receive the official invitation letter from the university after document verification within 7-10 days.",
-            },
-            {
-                step: "Step 3: Visa Processing",
-                description: "Apply for a student visa by submitting the invitation letter and medical reports. Visa processing takes approximately 2-3 weeks.",
-            },
-            {
-                step: "Step 4: Travel & Arrival",
-                description: "Book your flight and notify the university of your arrival date. Airport pick-up assistance is available.",
-            },
-            {
-                step: "Step 5: University Registration",
-                description: "Upon arrival, complete the necessary registration, medical tests, and hostel arrangements before attending the orientation session.",
-            },
+          {
+            step: "Step 1: Application & Eligibility",
+            description: "Submit the online application form and required documents. Ensure you meet the eligibility criteria, including minimum educational qualifications.",
+          },
+          {
+            step: "Step 2: Receive Invitation Letter",
+            description: "Upon document verification, the university will send an official invitation letter, which is required for the visa process.",
+          },
+          {
+            step: "Step 3: Visa Processing",
+            description: "Apply for a student visa with the invitation letter and necessary documents. The visa processing time typically takes 10-15 working days.",
+          },
+          {
+            step: "Step 4: Travel & Arrival",
+            description: "After receiving your visa, book your flight to Russia and inform the university of your arrival date. Airport pick-up services are available.",
+          },
+          {
+            step: "Step 5: University Registration",
+            description: "Upon arrival, complete necessary medical tests, document verification, and hostel registration before attending the university orientation.",
+          },
         ],
         admissionImage: "/images/north-western-admission.jpg",
-        bottomBanner: "https://avatars.mds.yandex.net/i?id=642eaabab1cf04445053719589837c67_l-5649169-images-thumbs&n=13",
-        bottomText: "Become a part of a research-driven medical university!",
-    },
-    {
+        bottomBanner: "https://studypalacehub.com/wp-content/uploads/2024/07/NWSMU-1024x672.webp",
+        bottomText: "Become part of one of Russia’s premier medical universities!",
+      },
+      {
+        id: "crimea-medical",
+        name: "Crimea Federal University - Medical Faculty",
+        intro: "A leading medical faculty offering high-quality education in a scenic location.",
+        about: "Crimea Federal University, located in Simferopol, Crimea, is a top institution known for its high standards in medical education. The Medical Faculty is renowned for producing highly competent medical professionals who are well-prepared to meet international standards.",
+        about2: "Founded in 2014, Crimea Federal University combines modern medical education techniques with clinical practice and research. The university offers a wide variety of specializations, modern facilities, and extensive international collaborations.",
+        aboutImage: "https://www.ruseducation.in/wp-content/uploads/2022/01/Crimea-Federal-University.webp",
+        admissionSteps: [
+          {
+            step: "Step 1: Application & Eligibility",
+            description: "Submit your application and required documents to meet the eligibility criteria, including the minimum academic qualifications.",
+          },
+          {
+            step: "Step 2: Receive Invitation Letter",
+            description: "Upon verification of documents, an official invitation letter will be sent to you to facilitate your visa application.",
+          },
+          {
+            step: "Step 3: Visa Processing",
+            description: "Apply for your student visa with the official invitation letter and medical check-up reports. Visa processing generally takes 10-15 working days.",
+          },
+          {
+            step: "Step 4: Travel & Arrival",
+            description: "Book your flight and inform the university. Airport pick-up services will be arranged to assist you upon arrival.",
+          },
+          {
+            step: "Step 5: University Registration",
+            description: "Complete your registration, medical tests, and hostel formalities upon arrival at the university.",
+          },
+        ],
+        admissionImage: "/images/crimea-admission.jpg",
+        bottomBanner: "https://www.ruseducation.in/wp-content/uploads/2022/01/Crimea-Federal-University.webp",
+        bottomText: "Join Crimea Federal University and shape your future in medicine!",
+      },
+      {
+        id: "kursk",
+        name: "Kursk State Medical University",
+        intro: "A prestigious medical institution with a focus on medical research and clinical practice.",
+        about: "Kursk State Medical University, located in Kursk, Russia, is one of the oldest and most respected medical universities in the country. The university is known for its excellent medical education programs and its contributions to medical research.",
+        about2: "Founded in 1935, the university has developed into a world-class institution with modern teaching methods, excellent clinical practice facilities, and an international student body.",
+        aboutImage: "https://images.shiksha.com/mediadata/images/1595568848phpHA9Mh4.jpeg",
+        admissionSteps: [
+          {
+            step: "Step 1: Application & Eligibility",
+            description: "Submit your application along with the necessary documents to confirm eligibility for admission.",
+          },
+          {
+            step: "Step 2: Receive Invitation Letter",
+            description: "After verifying your documents, the university will send an invitation letter for visa processing.",
+          },
+          {
+            step: "Step 3: Visa Processing",
+            description: "With the invitation letter and medical reports, apply for a student visa. Visa processing time usually takes 10-15 working days.",
+          },
+          {
+            step: "Step 4: Travel & Arrival",
+            description: "Book your flight and notify the university. Airport pick-up services are available to assist you upon arrival.",
+          },
+          {
+            step: "Step 5: University Registration",
+            description: "Complete your registration, medical check-ups, and hostel registration after your arrival.",
+          },
+        ],
+        admissionImage: "/images/kursk-admission.jpg",
+        bottomBanner: "https://gmfadmission.in/wp-content/uploads/2022/07/kursk-state-medical-university.jpeg",
+        bottomText: "Study at Kursk State Medical University, where your future in medicine begins!",
+      },
+      {
+        id: "bashkir",
+        name: "Bashkir State Medical University",
+        intro: "A leading medical university known for its strong academic programs and research opportunities.",
+        about: "Bashkir State Medical University, located in Ufa, Russia, offers a diverse range of medical courses and has established itself as one of the top medical universities in the country. Known for its high standards in education and research, the university continues to attract international students.",
+        about2: "Founded in 1932, Bashkir State Medical University offers a robust curriculum, modern facilities, and access to some of the best medical practitioners in the country. The university is committed to training skilled healthcare professionals.",
+        aboutImage: "https://studymedico.com/public//storage/uploads/university/blog185-BASHKIR%20STATE%20MEDICAL%20UNIVERSITY%20,%20MBBS%20IN%20RUSSIA_1.png",
+        admissionSteps: [
+          {
+            step: "Step 1: Application & Eligibility",
+            description: "Fill out the online application and submit your documents to ensure you meet the admission criteria.",
+          },
+          {
+            step: "Step 2: Receive Invitation Letter",
+            description: "Once your documents are verified, you will receive an official invitation letter for visa purposes.",
+          },
+          {
+            step: "Step 3: Visa Processing",
+            description: "Apply for your student visa with the invitation letter and necessary documents. The visa processing time is typically 10-15 working days.",
+          },
+          {
+            step: "Step 4: Travel & Arrival",
+            description: "Book your flight and notify the university of your arrival. Airport pick-up services will be arranged for you.",
+          },
+          {
+            step: "Step 5: University Registration",
+            description: "Upon arrival, complete the necessary medical tests, document verification, and hostel registration.",
+          },
+        ],
+        admissionImage: "/images/bashkir-admission.jpg",
+        bottomBanner: "https://www.ruseducation.in/wp-content/uploads/2022/01/Bashkir-State-Medical-University.webp",
+        bottomText: "Pursue a medical degree at Bashkir State Medical University and be a part of our legacy!",
+      },
+      {
+        id: "kazan-medical",
+        name: "Kazan State Medical University",
+        intro: "A top medical university with excellent facilities and international student exchange programs.",
+        about: "Kazan State Medical University, located in Kazan, Russia, is a prestigious institution with a strong reputation for producing qualified medical professionals. The university offers a range of medical programs and emphasizes research and international collaboration.",
+        about2: "Founded in 1814, Kazan State Medical University is one of the oldest and most respected medical schools in Russia. It offers cutting-edge education with modern teaching methods, state-of-the-art medical facilities, and clinical practice opportunities.",
+        aboutImage: "https://studymbbsinrussia.co.in/wp-content/uploads/2016/04/kazan-medical-university-russia.jpg",
+        admissionSteps: [
+          {
+            step: "Step 1: Application & Eligibility",
+            description: "Submit your application form and required documents, ensuring that you meet the eligibility criteria for admission.",
+          },
+          {
+            step: "Step 2: Receive Invitation Letter",
+            description: "The university will send you an invitation letter after document verification for the purpose of applying for a visa.",
+          },
+          {
+            step: "Step 3: Visa Processing",
+            description: "With the invitation letter and required documents, you can apply for a student visa. Processing typically takes 10-15 working days.",
+          },
+          {
+            step: "Step 4: Travel & Arrival",
+            description: "Book your flight and notify the university. Airport pick-up services are provided upon arrival.",
+          },
+          {
+            step: "Step 5: University Registration",
+            description: "Upon arrival, complete your registration, medical tests, and hostel check-in before the university orientation.",
+          },
+        ],
+        admissionImage: "/images/kazan-medical-admission.jpg",
+        bottomBanner: "https://navchetana.education/assets/images/universities/Russia/Kazan-State.jpg",
+        bottomText: "Study medicine at Kazan State Medical University, a historic institution that prepares you for a successful medical career!",
+      },
+      {
+        id: "maikop-medical",
+        name: "Maikop State Technological University - Medical Faculty",
+        intro: "A rising medical faculty known for its modern approach to medical education and training.",
+        about: "Maikop State Technological University, located in Maikop, Russia, is gaining recognition for its medical faculty, which offers a blend of modern education and practical training in healthcare. The university focuses on preparing specialists who can contribute to both local and global healthcare systems.",
+        about2: "Founded in 1950, Maikop State Technological University has expanded its medical faculty to include a variety of medical specializations. The university is equipped with advanced training centers and clinics to provide hands-on experience to students.",
+        aboutImage: "https://www.indomededucare.com/Admin/Indomed_AdminDash/Admin/collegeuploads/Maikop-State-Technological-University.jpg",
+        admissionSteps: [
+          {
+            step: "Step 1: Application & Eligibility",
+            description: "Submit the online application and required documents, ensuring that you meet the eligibility criteria, including academic qualifications.",
+          },
+          {
+            step: "Step 2: Receive Invitation Letter",
+            description: "After verification of documents, the university will send an official invitation letter for your student visa application.",
+          },
+          {
+            step: "Step 3: Visa Processing",
+            description: "Apply for a student visa with the invitation letter and necessary medical documents. The processing time usually takes 10-15 working days.",
+          },
+          {
+            step: "Step 4: Travel & Arrival",
+            description: "Book your flight and inform the university of your arrival date. Airport pick-up services are available.",
+          },
+          {
+            step: "Step 5: University Registration",
+            description: "Complete medical tests, document verification, and hostel registration upon arrival before attending the orientation session.",
+          },
+        ],
+        admissionImage: "/images/maikop-medical-admission.jpg",
+        bottomBanner: "https://www.worldwidecolleges.com/wp-content/uploads/classified-listing/2024/02/Maykop-State-Technological-University-Russia-1.webp",
+        bottomText: "Join Maikop State Technological University’s Medical Faculty and take the first step toward a successful medical career!",
+      },
+      {
+        id: "volgograd",
+        name: "Volgograd State Medical University",
+        intro: "A historic medical university with a focus on clinical practice and research.",
+        about: "Volgograd State Medical University, located in Volgograd, Russia, is one of the leading medical institutions known for its high educational standards and research contributions. The university offers comprehensive medical programs that prepare students for both domestic and international healthcare systems.",
+        about2: "Founded in 1935, Volgograd State Medical University has established itself as a premier destination for medical education in Russia. The university is equipped with modern classrooms, research labs, and clinical facilities to support medical students in their education and career development.",
+        aboutImage: "https://www.ruseducation.in/wp-content/uploads/2022/01/Volgograd-State-Medical-University-2.webp",
+        admissionSteps: [
+          {
+            step: "Step 1: Application & Eligibility",
+            description: "Submit your application and required documents. Ensure you meet the eligibility criteria, including academic qualifications and necessary prerequisites.",
+          },
+          {
+            step: "Step 2: Receive Invitation Letter",
+            description: "After the document review process, the university will send you an official invitation letter to help with your visa application.",
+          },
+          {
+            step: "Step 3: Visa Processing",
+            description: "Apply for a student visa with the invitation letter and medical documents. Visa processing typically takes 10-15 working days.",
+          },
+          {
+            step: "Step 4: Travel & Arrival",
+            description: "Once you receive your visa, book your flight to Russia and notify the university of your arrival. The university will assist with airport pick-up services.",
+          },
+          {
+            step: "Step 5: University Registration",
+            description: "Complete the necessary medical check-ups, document verification, and hostel registration before attending the orientation session.",
+          },
+        ],
+        admissionImage: "/images/volgograd-admission.jpg",
+        bottomBanner: "https://www.studyabroadedu.com/study-mbbs-in-russia/images/univ/volgograd-state-medical-university.jpg",
+        bottomText: "Become part of Volgograd State Medical University and build a successful career in medicine!",
+      },
+      {
+        id: "perm",
+        name: "Perm State Medical University",
+        intro: "A well-established medical university with a focus on practical experience and patient care.",
+        about: "Perm State Medical University, located in Perm, Russia, offers a range of medical programs that focus on both theoretical knowledge and practical experience in clinical settings. The university is known for its research excellence and dedication to improving healthcare standards.",
+        about2: "Founded in 1916, Perm State Medical University has a long history of training skilled healthcare professionals. The university offers a well-rounded education with modern teaching methods, excellent clinical training, and research opportunities.",
+        aboutImage: "https://blog.rmgoe.org/wp-content/uploads/2023/04/Perm-State-Medical-University-Russia.jpg",
+        admissionSteps: [
+          {
+            step: "Step 1: Application & Eligibility",
+            description: "Complete the online application and submit all necessary documents to meet the eligibility criteria, including academic qualifications and language proficiency.",
+          },
+          {
+            step: "Step 2: Receive Invitation Letter",
+            description: "Once your documents are reviewed, the university will send you an invitation letter for visa processing.",
+          },
+          {
+            step: "Step 3: Visa Processing",
+            description: "Apply for a student visa using the invitation letter and other required documents. The visa processing time is typically 10-15 working days.",
+          },
+          {
+            step: "Step 4: Travel & Arrival",
+            description: "Once you receive your visa, book your flight and inform the university. Airport pick-up services will be arranged upon your arrival.",
+          },
+          {
+            step: "Step 5: University Registration",
+            description: "After arriving in Perm, complete your medical tests, document verification, and hostel registration before starting your studies.",
+          },
+        ],
+        admissionImage: "/images/perm-admission.jpg",
+        bottomBanner: "https://admissionroute.com/wp-content/uploads/2022/03/perm-state-university_0-1024x446.jpg",
+        bottomText: "Start your medical career at Perm State Medical University, one of Russia’s leading institutions for healthcare education!",
+      },
+      {
+        id: "orenburg",
+        name: "Orenburg State Medical University",
+        intro: "An established medical university offering comprehensive training in medicine and healthcare.",
+        about: "Orenburg State Medical University, located in Orenburg, Russia, offers high-quality medical programs with a strong focus on clinical training and patient care. The university provides state-of-the-art facilities for medical education and research.",
+        about2: "Founded in 1944, Orenburg State Medical University has developed into a prominent medical school in Russia. The university offers a range of specialized programs in medicine and health sciences, with a focus on preparing students for successful careers in healthcare.",
+        aboutImage: "https://www.ruseducation.in/wp-content/uploads/2020/11/Orenburg-State-Medical-University.webp",
+        admissionSteps: [
+          {
+            step: "Step 1: Application & Eligibility",
+            description: "Submit your application and all required documents to meet the eligibility criteria for admission to Orenburg State Medical University.",
+          },
+          {
+            step: "Step 2: Receive Invitation Letter",
+            description: "After reviewing your documents, the university will issue an invitation letter to assist with your student visa application.",
+          },
+          {
+            step: "Step 3: Visa Processing",
+            description: "Apply for your student visa using the invitation letter and necessary documentation. The visa processing period is typically 10-15 working days.",
+          },
+          {
+            step: "Step 4: Travel & Arrival",
+            description: "Once your visa is approved, book your flight and inform the university of your arrival date. The university provides airport pick-up services.",
+          },
+          {
+            step: "Step 5: University Registration",
+            description: "Complete medical tests, document verification, and hostel registration upon arrival at the university.",
+          },
+        ],
+        admissionImage: "/images/orenburg-admission.jpg",
+        bottomBanner: "https://www.raieducation.com/images/blog/1584686566_banner.png",
+        bottomText: "Join Orenburg State Medical University and pursue a rewarding career in medicine!",
+      },
+      {
+        id: "tver",
+        name: "Tver State Medical University",
+        intro: "A prominent medical university offering a comprehensive medical education and practical training.",
+        about: "Tver State Medical University, located in Tver, Russia, has long been a hub for medical education in the region. With a commitment to producing highly skilled healthcare professionals, the university provides world-class medical training through its innovative programs and clinical practice.",
+        about2: "Founded in 1936, Tver State Medical University has been instrumental in training medical professionals for Russia and abroad. The university’s modern campus is equipped with state-of-the-art laboratories, research facilities, and clinical centers to ensure the best education for its students.",
+        aboutImage: "https://images.shiksha.com/mediadata/images/1434083689phpyEuq2x.png",
+        admissionSteps: [
+          {
+            step: "Step 1: Application & Eligibility",
+            description: "Submit your online application along with the required documents. Ensure that you meet the university’s eligibility criteria.",
+          },
+          {
+            step: "Step 2: Receive Invitation Letter",
+            description: "Once your application is processed, you will receive an official invitation letter to support your student visa application.",
+          },
+          {
+            step: "Step 3: Visa Processing",
+            description: "Apply for a student visa with the invitation letter and other required documents. Visa processing usually takes 10-15 working days.",
+          },
+          {
+            step: "Step 4: Travel & Arrival",
+            description: "After receiving your visa, book your flight to Russia and inform the university of your arrival. Airport pick-up services are available.",
+          },
+          {
+            step: "Step 5: University Registration",
+            description: "Upon arrival, complete your medical tests, document verification, and hostel registration before starting your academic journey.",
+          },
+        ],
+        admissionImage: "/images/tver-admission.jpg",
+        bottomBanner: "https://images.shiksha.com/mediadata/images/articles/1712315231php7to1mD.jpeg",
+        bottomText: "Join Tver State Medical University and take your first step toward becoming a healthcare professional!",
+      },
+      {
+        id: "spb-pediatric",
+        name: "Saint Petersburg State Pediatric Medical University",
+        intro: "A leading university specializing in pediatric medical education with a strong research focus.",
+        about: "Saint Petersburg State Pediatric Medical University is one of the top institutions in Russia dedicated to pediatric medicine and child healthcare. The university combines cutting-edge research with practical clinical training to ensure that students graduate as highly competent pediatric specialists.",
+        about2: "Founded in 1925, Saint Petersburg State Pediatric Medical University is internationally recognized for its specialized focus on pediatric education. The university boasts state-of-the-art laboratories, clinical centers, and a strong partnership with top healthcare institutions to provide practical training to its students.",
+        aboutImage: "https://www.worldwidecolleges.com/wp-content/uploads/2022/03/Saint-Petersburg-Pediatric-Medical-University.jpg",
+        admissionSteps: [
+          {
+            step: "Step 1: Application & Eligibility",
+            description: "Complete the application process and submit all required documents. Ensure you meet the eligibility criteria before applying.",
+          },
+          {
+            step: "Step 2: Receive Invitation Letter",
+            description: "After document review, the university will issue an invitation letter, which is required for visa processing.",
+          },
+          {
+            step: "Step 3: Visa Processing",
+            description: "Apply for a student visa with the invitation letter and medical documents. The visa process typically takes 10-15 working days.",
+          },
+          {
+            step: "Step 4: Travel & Arrival",
+            description: "Once your visa is approved, book your flight and inform the university. They will provide airport pick-up assistance.",
+          },
+          {
+            step: "Step 5: University Registration",
+            description: "Complete medical tests, document verification, and hostel registration upon arrival before attending the orientation session.",
+          },
+        ],
+        admissionImage: "/images/spb-pediatric-admission.jpg",
+        bottomBanner: "https://www.moksh16.com/uploads/images/alte-university-school-of-medicine-georgia/Russia/Saint-Petersburg-Pediatric-Medical-01.webp",
+        bottomText: "Join the prestigious Saint Petersburg State Pediatric Medical University and become an expert in pediatric healthcare!",
+      },
+      {
         id: "kazan-federal",
         name: "Kazan Federal University",
-        intro: "One of Russia’s oldest universities with a rich history in medical education.",
-        about: "Founded in 1804, Kazan Federal University is one of the oldest and most prestigious universities in Russia, with international recognition. The university is renowned for its strong research programs in medicine, dentistry, and pharmacy.",
-        about2: "With modern infrastructure and a focus on medical research and training, Kazan Federal University attracts students from all over the world. The university is known for its world-class faculty and highly advanced medical labs.",
-        aboutImage: "https://avatars.mds.yandex.net/i?id=e325a45bb0d74187113d99394bed8f7b_l-5285139-images-thumbs&n=13",
+        intro: "A prestigious university offering comprehensive medical programs with strong international ties.",
+        about: "Kazan Federal University, located in Kazan, Russia, is one of the oldest and most esteemed institutions in the country. Known for its academic excellence and research-driven approach, the university offers a range of medical programs that attract students from around the world.",
+        about2: "Founded in 1804, Kazan Federal University has a long history of providing top-quality education. The university has modern medical training facilities, world-class research centers, and extensive international cooperation, ensuring students receive the best education possible.",
+        aboutImage: "https://studypalacehub.com/wp-content/uploads/2023/03/cr2.webp",
         admissionSteps: [
-            {
-                step: "Step 1: Application & Eligibility",
-                description: "Submit your application and the necessary documents, including academic certificates, passport copy, and NEET scores (if required).",
-            },
-            {
-                step: "Step 2: Invitation Letter",
-                description: "After document verification, you will receive an invitation letter from Kazan Federal University within 10 days.",
-            },
-            {
-                step: "Step 3: Visa Processing",
-                description: "Apply for a student visa at the Russian Embassy with the invitation letter and medical reports. Visa processing time is approximately 2-3 weeks.",
-            },
-            {
-                step: "Step 4: Travel & Arrival",
-                description: "Book your flight to Kazan and inform the university. The university will assist with the airport pickup.",
-            },
-            {
-                step: "Step 5: University Enrollment",
-                description: "Complete the registration process at the university, submit your medical reports, and attend the orientation session.",
-            },
+          {
+            step: "Step 1: Application & Eligibility",
+            description: "Submit your application along with the required documents. Ensure that you meet all eligibility requirements for admission.",
+          },
+          {
+            step: "Step 2: Receive Invitation Letter",
+            description: "Once the application is processed and documents are verified, the university will issue an invitation letter to facilitate your visa application.",
+          },
+          {
+            step: "Step 3: Visa Processing",
+            description: "Apply for a student visa with the invitation letter and necessary medical documents. The visa processing takes about 10-15 working days.",
+          },
+          {
+            step: "Step 4: Travel & Arrival",
+            description: "Once your visa is granted, book your flight to Kazan and inform the university. The university will arrange airport pick-up services.",
+          },
+          {
+            step: "Step 5: University Registration",
+            description: "Upon arrival, you will undergo medical tests, document verification, and hostel registration before beginning your academic journey.",
+          },
         ],
         admissionImage: "/images/kazan-federal-admission.jpg",
-        bottomBanner: "https://avatars.mds.yandex.net/i?id=38cfb4a3ddcd171e7653b7fe503ab089_l-4347893-images-thumbs&n=13",
-        bottomText: "Join one of Russia’s most prestigious universities today!",
-    },
-    {
-        id: "petrozavodsk",
-        name: "Petrozavodsk State University",
-        intro: "A respected medical university offering comprehensive education and training for international students.",
-        about: "Petrozavodsk State University (PetrSU) is known for its advanced medical programs and strong research initiatives. The university has been offering quality education for many years, training students in both theoretical knowledge and practical skills.",
-        about2: "Established in 1940, PetrSU provides an excellent academic environment with modern medical facilities. The university is known for its high graduation rates and successful alumni in the medical field.",
-        aboutImage: "https://doctoreducon.com/wp-content/uploads/2023/07/petrozavodsk-state-university.jpg",
+        bottomBanner: "https://blog.rmgoe.org/wp-content/uploads/2022/06/Kazan-Federal-University-Russia_.jpg",
+        bottomText: "Start your medical education at Kazan Federal University and be a part of its rich academic tradition!",
+      },
+      {
+        id: "synergy-medical",
+        name: "Synergy University - Medical Faculty",
+        intro: "A modern university offering specialized medical programs with a focus on innovation and technology.",
+        about: "Synergy University, with its Medical Faculty, offers cutting-edge medical programs that incorporate innovative teaching methods and the latest medical technologies. The university prepares students for a wide range of medical careers, with a focus on practical and clinical training.",
+        about2: "Synergy University is a relatively new but rapidly growing educational institution. The Medical Faculty offers programs that combine theory with hands-on clinical practice, ensuring that students are prepared for the ever-evolving healthcare industry.",
+        aboutImage: "https://overseasmedicalstudy.com/admin/uploads/imagebag/1a39ae95781687438693.jpg",
         admissionSteps: [
-            {
-                step: "Step 1: Application & Documentation",
-                description: "Submit the online application along with necessary documents such as academic transcripts, passport copy, and NEET scores (if applicable).",
-            },
-            {
-                step: "Step 2: Invitation Letter",
-                description: "After the verification of documents, you will receive the invitation letter from Petrozavodsk State University within 7-10 days.",
-            },
-            {
-                step: "Step 3: Visa Processing",
-                description: "Apply for a student visa with the invitation letter and medical reports. Visa processing usually takes 2-3 weeks.",
-            },
-            {
-                step: "Step 4: Travel & Accommodation",
-                description: "Book your flight to Petrozavodsk and inform the university about your arrival. The university provides accommodation assistance.",
-            },
-            {
-                step: "Step 5: Registration & Orientation",
-                description: "Complete registration formalities, including medical tests and document verification, and attend the orientation before classes begin.",
-            },
+          {
+            step: "Step 1: Application & Eligibility",
+            description: "Complete the application form and submit the required documents. Make sure you meet the eligibility criteria for admission to the Medical Faculty.",
+          },
+          {
+            step: "Step 2: Receive Invitation Letter",
+            description: "After your documents are reviewed, you will receive an official invitation letter to support your student visa application.",
+          },
+          {
+            step: "Step 3: Visa Processing",
+            description: "Apply for a student visa with the invitation letter and medical documents. The visa processing time usually takes 10-15 working days.",
+          },
+          {
+            step: "Step 4: Travel & Arrival",
+            description: "Once your visa is approved, book your flight and inform the university of your arrival date. The university will assist with airport pick-up.",
+          },
+          {
+            step: "Step 5: University Registration",
+            description: "Complete medical check-ups, document verification, and hostel registration upon your arrival at Synergy University.",
+          },
         ],
-        admissionImage: "/images/petrozavodsk-admission.jpg",
-        bottomBanner: "https://educationvibes.in/uploads/university_banner/mbbs_abroad/petrozavodsk-state-medical-university.webp",
-        bottomText: "Start your medical career with a strong foundation at Petrozavodsk State University!",
-    },
-    {
-        id: "yaroslavl",
-        name: "Yaroslavl State Medical University",
-        intro: "A top-rated medical university in Russia with advanced teaching methods and research programs.",
-        about: "Yaroslavl State Medical University (YSMU) is recognized for its outstanding medical education and research programs. The university focuses on providing students with practical experience and advanced knowledge in medical fields.",
-        about2: "Founded in 1944, YSMU has trained many skilled healthcare professionals. It offers a variety of medical programs, supported by its modern facilities and international collaborations.",
-        aboutImage: "https://avatars.mds.yandex.net/i?id=ec31507e20e8f7e50c97bbc258fb50bd_l-5210027-images-thumbs&n=13",
-        admissionSteps: [
-            {
-                step: "Step 1: Application Submission",
-                description: "Complete the online application and upload all required documents such as academic certificates and passport details.",
-            },
-            {
-                step: "Step 2: Invitation Letter",
-                description: "Upon verification of documents, you will receive the invitation letter from Yaroslavl State Medical University within 10 working days.",
-            },
-            {
-                step: "Step 3: Visa Processing",
-                description: "Apply for a student visa at the Russian Embassy with the invitation letter and medical documents. The visa process will take 2-3 weeks.",
-            },
-            {
-                step: "Step 4: Travel & Arrival",
-                description: "Book your flight and notify the university. Airport pickup assistance is available.",
-            },
-            {
-                step: "Step 5: University Registration",
-                description: "Upon arrival, complete the registration and medical checks before the start of your classes.",
-            },
-        ],
-        admissionImage: "/images/yaroslavl-admission.jpg",
-        bottomBanner: "https://avatars.mds.yandex.net/i?id=3390f53dea7ba1ad4c603d91ee6f242b_l-2918686-images-thumbs&n=13",
-        bottomText: "Explore a rewarding medical career at Yaroslavl State Medical University!",
-    },
-    {
-        id: "izhevsk",
-        name: "Izhevsk State Medical Academy",
-        intro: "A renowned university offering specialized medical programs and extensive clinical practice.",
-        about: "Izhevsk State Medical Academy (ISMA) offers high-quality medical education with an emphasis on clinical practice and research. The university has strong academic programs and modern facilities for practical training.",
-        about2: "Founded in 1930, Izhevsk State Medical Academy has been producing well-trained professionals for the healthcare industry. It is known for its advanced research in various medical fields and strong international ties.",
-        aboutImage: "https://upload.wikimedia.org/wikipedia/commons/thumb/c/ca/%D0%A3%D1%87%D0%B5%D0%B1%D0%BD%D0%BE-%D0%BB%D0%B0%D0%B1%D0%BE%D1%80%D0%B0%D1%82%D0%BE%D1%80%D0%BD%D1%8B%D0%B9_%D0%BA%D0%BE%D1%80%D0%BF%D1%83%D1%81.jpg/640px-%D0%A3%D1%87%D0%B5%D0%B1%D0%BD%D0%BE-%D0%BB%D0%B0%D0%B1%D0%BE%D1%80%D0%B0%D1%82%D0%BE%D1%80%D0%BD%D1%8B%D0%B9_%D0%BA%D0%BE%D1%80%D0%BF%D1%83%D1%81.jpg",
-        admissionSteps: [
-            {
-                step: "Step 1: Application Submission",
-                description: "Submit the online application form along with required documents including academic transcripts, passport, and NEET scores (if required).",
-            },
-            {
-                step: "Step 2: Invitation Letter",
-                description: "Upon verification, you will receive the official invitation letter from Izhevsk State Medical Academy.",
-            },
-            {
-                step: "Step 3: Visa Processing",
-                description: "Apply for a student visa with the invitation letter and necessary medical documents. Visa processing usually takes 2-3 weeks.",
-            },
-            {
-                step: "Step 4: Travel & Arrival",
-                description: "Book your flight to Izhevsk and inform the university for airport pickup assistance.",
-            },
-            {
-                step: "Step 5: Registration & Orientation",
-                description: "Complete university registration, submit medical reports, and attend the orientation session.",
-            },
-        ],
-        admissionImage: "/images/izhevsk-admission.jpg",
-        bottomBanner: "https://brightfutureas.com/wp-content/uploads/2024/08/Izhevsk-State-Medical-Academy-jpg-webp.webp",
-        bottomText: "Embark on your medical journey at Izhevsk State Medical Academy!",
-    },
-    {
-        id: "peoples-friendship",
-        name: "Peoples' Friendship University",
-        intro: "A global university offering a diverse and dynamic learning environment for medical students.",
-        about: "Peoples' Friendship University (PFUR) in Moscow is a top institution that attracts students from all over the world. It offers cutting-edge medical programs supported by international partnerships.",
-        about2: "Founded in 1960, PFUR has a long history of training medical professionals. It offers a wide range of medical programs, focusing on both academic excellence and practical experience.",
-        aboutImage: "https://avatars.mds.yandex.net/i?id=f014cc4e34f727fe4e35f7aba052d05e_l-2769679-images-thumbs&n=13",
-        admissionSteps: [
-            {
-                step: "Step 1: Application & Document Submission",
-                description: "Complete the online application form and submit required documents including your academic transcripts, passport, and NEET score (if applicable).",
-            },
-            {
-                step: "Step 2: Invitation Letter",
-                description: "After document verification, you will receive an invitation letter from the university within 7-10 working days.",
-            },
-            {
-                step: "Step 3: Visa Processing",
-                description: "Apply for a student visa at the Russian Embassy with the invitation letter and medical documentation.",
-            },
-            {
-                step: "Step 4: Travel & Arrival",
-                description: "Book your flight and inform the university of your arrival. The university provides airport pickup assistance.",
-            },
-            {
-                step: "Step 5: Registration & Orientation",
-                description: "Complete university registration, attend medical tests, and take part in the orientation session before classes begin.",
-            },
-        ],
-        admissionImage: "/images/peoples-friendship-admission.jpg",
-        bottomBanner: "https://avatars.mds.yandex.net/i?id=88526f7031d39df3a4c9e373cccdc2c6_l-9065879-images-thumbs&n=13",
-        bottomText: "Join a globally diverse medical community at Peoples' Friendship University!",
-    }
+        admissionImage: "/images/synergy-medical-admission.jpg",
+        bottomBanner: "https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEiiqPlKVxR56iJGWCJUGm3egI8j3YnjJp2TbVauZ72cRu0sCflc8-g7m5064oxGy1l9H4WCBwdZsMOS4KZGB75L5V-UvxD8aOtZzWRFlnl7fqzlIUgnkAN16_Rq_HleQ58rMiwkJdUzqbJyYrPhsElD8nwSZwspIYdeeLs3aAz3tUIA2piExcJDdl2APw/s640/photo-3-9e8e465724.jpg",
+        bottomText: "Join Synergy University’s Medical Faculty and be a part of an innovative and dynamic medical education system!",
+      },    
 ];
+
+
 
 function UniversityDetailPage() {
     const { id } = useParams();
