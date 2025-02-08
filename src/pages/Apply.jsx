@@ -87,7 +87,12 @@ const Apply = () => {
     "Crimea Federal University",
     "Moscow State Pedagogical University (MPGU)",
     "The Pushkin State Russian Language Institute Moscow",
-    "Russian State University for the Humanities Moscow"
+    "Russian State University for the Humanities Moscow",
+    "Don State Technical University",
+    "Southern Federal University",
+    "Rostov State University of Economics, Russia",
+    "Ukhta State Technical University",
+    "Udmurt State University",
   ];
   
 
