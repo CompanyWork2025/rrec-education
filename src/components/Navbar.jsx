@@ -173,26 +173,42 @@ const Navbar = () => {
 
                 {openTechnicalDropdown && (
                   <div className="absolute mt-2 w-60 bg-white shadow-lg rounded-lg text-gray-800 z-50 overflow-visible">
-                    <NavLink to="/tech-university/don-state-technical-university" className="block py-2 px-4 hover:bg-gray-200" onClick={handleLinkClick}>
-                      Don State Technical University
+                    <NavLink to="/tech-university/rostov-state-transport-university" className="block py-1 px-4 hover:bg-gray-200" onClick={handleLinkClick}>
+                      Rostov State Transport University
                     </NavLink>
-                    <NavLink to="/tech-university/southern-federal-university" className="block py-2 px-4 hover:bg-gray-200" onClick={handleLinkClick}>
-                      Southern Federal University
+                    <NavLink to="/tech-university/volgograd-state-technical-university" className="block py-1 px-4 hover:bg-gray-200" onClick={handleLinkClick}>
+                      Volgograd State Technical University
                     </NavLink>
-                    <NavLink to="/tech-university/rostov-state-economics" className="block py-2 px-4 hover:bg-gray-200" onClick={handleLinkClick}>
-                      Rostov State University Of Economics, Russia
+                    <NavLink to="/tech-university/saint-petersburg-polytechnical-university" className="block py-1 px-4 hover:bg-gray-200" onClick={handleLinkClick}>
+                      Saint Petersburg Polytechnical University
                     </NavLink>
-                    <NavLink to="/tech-university/kazan-federal-university" className="block py-2 px-4 hover:bg-gray-200" onClick={handleLinkClick}>
-                      Kazan Federal University
+                    <NavLink to="/tech-university/synergy-university-moscow" className="block py-1 px-4 hover:bg-gray-200" onClick={handleLinkClick}>
+                      Synergy University Moscow
                     </NavLink>
-                    <NavLink to="/tech-university/ukhta-state-technical-university" className="block py-2 px-4 hover:bg-gray-200" onClick={handleLinkClick}>
-                      Ukhta State Technical University
+                    <NavLink to="/tech-university/university-of-science-and-technology-misis" className="block py-1 px-4 hover:bg-gray-200" onClick={handleLinkClick}>
+                      University of Science and Technology MISiS
                     </NavLink>
-                    <NavLink to="/tech-university/udmurt-state-university" className="block py-2 px-4 hover:bg-gray-200" onClick={handleLinkClick}>
-                      Udmurt State University
+                    <NavLink to="/tech-university/ural-federal-university" className="block py-1 px-4 hover:bg-gray-200" onClick={handleLinkClick}>
+                      Ural Federal University
+                    </NavLink>
+                    <NavLink to="/tech-university/lomonosov-moscow-state-university" className="block py-1 px-4 hover:bg-gray-200" onClick={handleLinkClick}>
+                      Lomonosov Moscow State University
+                    </NavLink>
+                    <NavLink to="/tech-university/crimea-federal-university" className="block py-1 px-4 hover:bg-gray-200" onClick={handleLinkClick}>
+                      Crimea Federal University
+                    </NavLink>
+                    <NavLink to="/tech-university/moscow-state-pedagogical-university-mpgu" className="block py-1 px-4 hover:bg-gray-200" onClick={handleLinkClick}>
+                      Moscow State Pedagogical University (MPGU)
+                    </NavLink>
+                    <NavLink to="/tech-university/the-pushkin-state-russian-language-institute-moscow" className="block py-1 px-4 hover:bg-gray-200" onClick={handleLinkClick}>
+                      The Pushkin State Russian Language Institute Moscow
+                    </NavLink>
+                    <NavLink to="/tech-university/russian-state-university-for-the-humanities-moscow" className="block py-1 px-4 hover:bg-gray-200" onClick={handleLinkClick}>
+                      Russian State University for the Humanities Moscow
                     </NavLink>
                   </div>
                 )}
+
               </div>
             </div>
 
@@ -353,26 +369,43 @@ const Navbar = () => {
 
               {openTechnicalDropdown && (
                 <div ref={technicalDropdownRef} className="mt-2 w-full bg-white shadow-lg rounded-lg text-gray-800 mx-auto">
-                  <NavLink to="/tech-university/don-state-technical-university" onClick={handleLinkClick} className={({ isActive }) => isActive ? 'block py-2 px-4 font-bold text-[#306185] bg-gray-100' : 'block py-2 px-4 hover:bg-gray-200 text-center'}>
-                    Don State Technical University
+                  <NavLink to="/tech-university/rostov-state-transport-university" onClick={handleLinkClick} className={({ isActive }) => isActive ? 'block py-1 px-4 font-bold text-[#306185] bg-gray-100' : 'block py-1 px-4 hover:bg-gray-200 text-center'}>
+                    Rostov State Transport University
                   </NavLink>
-                  <NavLink to="/tech-university/southern-federal-university" onClick={handleLinkClick} className={({ isActive }) => isActive ? 'block py-2 px-4 font-bold text-[#306185] bg-gray-100' : 'block py-2 px-4 hover:bg-gray-200 text-center'}>
-                    Southern Federal University
+                  <NavLink to="/tech-university/volgograd-state-technical-university" onClick={handleLinkClick} className={({ isActive }) => isActive ? 'block py-1 px-4 font-bold text-[#306185] bg-gray-100' : 'block py-1 px-4 hover:bg-gray-200 text-center'}>
+                    Volgograd State Technical University
                   </NavLink>
-                  <NavLink to="/tech-university/rostov-state-economics" onClick={handleLinkClick} className={({ isActive }) => isActive ? 'block py-2 px-4 font-bold text-[#306185] bg-gray-100' : 'block py-2 px-4 hover:bg-gray-200 text-center'}>
-                    Rostov State University Of Economics
+                  <NavLink to="/tech-university/saint-petersburg-polytechnical-university" onClick={handleLinkClick} className={({ isActive }) => isActive ? 'block py-1 px-4 font-bold text-[#306185] bg-gray-100' : 'block py-1 px-4 hover:bg-gray-200 text-center'}>
+                    Saint Petersburg Polytechnical University
                   </NavLink>
-                  <NavLink to="/tech-university/kazan-federal-university" onClick={handleLinkClick} className={({ isActive }) => isActive ? 'block py-2 px-4 font-bold text-[#306185] bg-gray-100' : 'block py-2 px-4 hover:bg-gray-200 text-center'}>
-                    Kazan Federal University
+                  <NavLink to="/tech-university/synergy-university-moscow" onClick={handleLinkClick} className={({ isActive }) => isActive ? 'block py-1 px-4 font-bold text-[#306185] bg-gray-100' : 'block py-1 px-4 hover:bg-gray-200 text-center'}>
+                    Synergy University Moscow
                   </NavLink>
-                  <NavLink to="/tech-university/ukhta-state-technical-university" onClick={handleLinkClick} className={({ isActive }) => isActive ? 'block py-2 px-4 font-bold text-[#306185] bg-gray-100' : 'block py-2 px-4 hover:bg-gray-200 text-center'}>
-                    Ukhta State Technical University
+                  <NavLink to="/tech-university/university-of-science-and-technology-misis" onClick={handleLinkClick} className={({ isActive }) => isActive ? 'block py-1 px-4 font-bold text-[#306185] bg-gray-100' : 'block py-1 px-4 hover:bg-gray-200 text-center'}>
+                    University of Science and Technology MISiS
                   </NavLink>
-                  <NavLink to="/tech-university/udmurt-state-university" onClick={handleLinkClick} className={({ isActive }) => isActive ? 'block py-2 px-4 font-bold text-[#306185] bg-gray-100' : 'block py-2 px-4 hover:bg-gray-200 text-center'}>
-                    Udmurt State University
+                  <NavLink to="/tech-university/ural-federal-university" onClick={handleLinkClick} className={({ isActive }) => isActive ? 'block py-1 px-4 font-bold text-[#306185] bg-gray-100' : 'block py-1 px-4 hover:bg-gray-200 text-center'}>
+                    Ural Federal University
+                  </NavLink>
+                  <NavLink to="/tech-university/lomonosov-moscow-state-university" onClick={handleLinkClick} className={({ isActive }) => isActive ? 'block py-1 px-4 font-bold text-[#306185] bg-gray-100' : 'block py-1 px-4 hover:bg-gray-200 text-center'}>
+                    Lomonosov Moscow State University
+                  </NavLink>
+                  <NavLink to="/tech-university/crimea-federal-university" onClick={handleLinkClick} className={({ isActive }) => isActive ? 'block py-1 px-4 font-bold text-[#306185] bg-gray-100' : 'block py-1 px-4 hover:bg-gray-200 text-center'}>
+                    Crimea Federal University
+                  </NavLink>
+                  <NavLink to="/tech-university/moscow-state-pedagogical-university-mpgu" onClick={handleLinkClick} className={({ isActive }) => isActive ? 'block py-1 px-4 font-bold text-[#306185] bg-gray-100' : 'block py-1 px-4 hover:bg-gray-200 text-center'}>
+                    Moscow State Pedagogical University (MPGU)
+                  </NavLink>
+                  <NavLink to="/tech-university/the-pushkin-state-russian-language-institute-moscow" onClick={handleLinkClick} className={({ isActive }) => isActive ? 'block py-1 px-4 font-bold text-[#306185] bg-gray-100' : 'block py-1 px-4 hover:bg-gray-200 text-center'}>
+                    The Pushkin State Russian Language Institute Moscow
+                  </NavLink>
+                  <NavLink to="/tech-university/russian-state-university-for-the-humanities-moscow" onClick={handleLinkClick} className={({ isActive }) => isActive ? 'block py-1 px-4 font-bold text-[#306185] bg-gray-100' : 'block py-1 px-4 hover:bg-gray-200 text-center'}>
+                    Russian State University for the Humanities Moscow
                   </NavLink>
                 </div>
               )}
+
+
             </div>
 
             <NavLink to="/admission-procedure" onClick={toggleMenu} className={({ isActive }) => isActive ? 'font-bold text-[#306185] block text-center' : 'text-gray-500 hover:text-blue-500 block text-center'}>

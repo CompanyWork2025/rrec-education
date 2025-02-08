@@ -582,7 +582,7 @@ function UniversityDetailPage() {
                 <div
                     className={`flex flex-col items-center mt-24 z-10 transition-all duration-1000 ease-in-out ${isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"}`}
                 >
-                    <h1 className="text-2xl md:text-5xl font-semibold drop-shadow-lg text-center">
+                    <h1 className="text-2xl md:text-5xl px-6 font-semibold drop-shadow-lg text-center">
                         {university.name}
                     </h1>
                     {/* GIF Below Text */}
