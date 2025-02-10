@@ -3,6 +3,23 @@ import arrow from "../../assets/arrow.gif";
 
 const Hero = () => {
   const [isVisible, setIsVisible] = useState(false);
+  const [currentHeading, setCurrentHeading] = useState(0);
+
+  // Array of heading variations
+  const headings = [
+    "STUDY MBBS IN RUSSIA FOR INDIAN STUDENTS",
+    "AFFORDABLE MBBS IN RUSSIA FOR INDIAN STUDENTS",
+    "TOP MEDICAL UNIVERSITIES IN RUSSIA FOR INDIAN STUDENTS",
+  ];
+
+  // Change heading every 4 seconds
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentHeading((prev) => (prev + 1) % headings.length);
+    }, 4000); // Change heading every 4 seconds
+
+    return () => clearInterval(interval);
+  }, []);
 
   useEffect(() => {
     // Trigger animation on component mount
@@ -28,16 +45,18 @@ const Hero = () => {
       {/* Hero Content */}
       <div
         className={`flex flex-col items-center mt-14 z-10 transition-all duration-1000 ease-in-out ${
-          isVisible
-            ? "opacity-100 translate-y-0"
-            : "opacity-0 translate-y-10"
+          isVisible ? "opacity-100 translate-y-0" : "opacity-0 translate-y-10"
         }`}
       >
-        <h1 className="text-2xl md:text-6xl font-bold drop-shadow-lg">
-          STUDY MBBS IN RUSSIA
-        </h1>
-        <h1 className="text-2xl md:text-6xl font-bold drop-shadow-4xl mt-2">
-          FOR INDIAN STUDENTS
+        {/* Single wrapped heading */}
+        <h1
+          className={`text-2xl md:text-6xl max-w-3xl text-center font-bold drop-shadow-lg transition-all duration-1000 ease-in-out ${
+            isVisible
+              ? "opacity-100 translate-y-0"
+              : "opacity-0 translate-y-10"
+          }`}
+        >
+          {headings[currentHeading]}
         </h1>
 
         {/* GIF Below Text */}
