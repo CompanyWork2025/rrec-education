@@ -163,7 +163,7 @@ const ContactUs = () => {
 
 
                 {/* Office Location and Working Hours */}
-                <div className="w-80 lg:w-full max-w-screen-xl px-6 bg-white shadow-lg rounded-lg p-6 mb-6 px-4 transition-transform transform hover:scale-105 hover:shadow-xl">
+                <div className="w-80 md:w-[700px] lg:w-full max-w-screen-xl px-6 bg-white shadow-lg rounded-lg p-6 mb-6 px-4 transition-transform transform hover:scale-105 hover:shadow-xl">
                    
 
                     {/* Office Working Hours */}
@@ -187,7 +187,7 @@ const ContactUs = () => {
 
 
                 {/* Call to Action with Blue Background */}
-                <div className="w-80 lg:w-full max-w-screen-xl px-6 bg-gradient-to-r from-blue-500 to-blue-700 text-white shadow-lg rounded-lg p-6 mb-6 px-4 transition-all transform hover:scale-105 hover:shadow-xl">
+                <div className="w-80 md:w-[700px] lg:w-full max-w-screen-xl px-6 bg-gradient-to-r from-blue-500 to-blue-700 text-white shadow-lg rounded-lg p-6 mb-6 px-4 transition-all transform hover:scale-105 hover:shadow-xl">
                     <h2 className="text-2xl font-semibold mb-4 text-center text-white">Study in Russia with Reliable Russian Educational Consultants</h2>
                     <p className="text-lg mb-4 text-center text-white opacity-90">Take the first step towards a successful career in Medicine or Engineering. Study in Russia with RREC.</p>
                     <div className="text-center">

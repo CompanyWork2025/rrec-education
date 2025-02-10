@@ -105,7 +105,7 @@ const Card = () => {
       <section className="w-full flex flex-col items-center justify-center mt-14 md:my-16">
         <div className="flex items-center -mt-10 md:mt-0 justify-center w-full">
           <div className="border-t-2 border-blue-500 w-1/4 hidden md:block"></div>
-          <h1 className="text-2xl md:text-5xl font-extrabold text-gray-800 mx-4 md:mx-6 text-center uppercase tracking-wide">
+          <h1 className="text-2xl md:text-3xl lg:text-5xl font-extrabold text-gray-800 mx-4 md:mx-6 text-center uppercase tracking-wide">
             Medical Universities
           </h1>
           <div className="border-t-2 border-blue-500 w-1/4 hidden md:block"></div>
@@ -130,7 +130,7 @@ const Card = () => {
               slidesPerView: 2,
             },
             768: {
-              slidesPerView: 3,
+              slidesPerView: 2,
             },
             1024: {
               slidesPerView: 4,

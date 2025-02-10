@@ -163,7 +163,7 @@ const Apply = () => {
           />
         </div>
 
-        <div className="w-full sm:w-2/3 lg:w-1/2 bg-white p-8 sm:p-12 shadow-2xl rounded-2xl border border-gray-200 backdrop-blur-xl bg-opacity-70">
+        <div className="w-full lg:w-1/2 bg-white p-8 sm:p-12 shadow-2xl rounded-2xl border border-gray-200 backdrop-blur-xl bg-opacity-70">
           <div className="flex justify-center mb-8">
             <img src={logo} alt="University Logo" className="h-14 md:h-20 drop-shadow-xl" />
           </div>

@@ -63,7 +63,7 @@ const Navbar = () => {
         <div className="max-w-screen-xl mx-auto font-semibold px-6 flex items-center">
           {/* Moving Text on the left */}
           <div className="overflow-hidden w-[70%] animate-fadeIn">
-            <p className="hidden md:block moving-text inline-block whitespace-nowrap pr-[100%] animate-ticker opacity-100">
+            <p className="hidden lg:block moving-text inline-block whitespace-nowrap pr-[100%] animate-ticker opacity-100">
               <span className="text-red-400 mr-2 bg-yellow-200 px-2 py-1 text-shadow-yellow font-bold rounded-md">
                 Breaking News:
               </span>
@@ -72,7 +72,7 @@ const Navbar = () => {
           </div>
 
           {/* Admission Helpline on the right */}
-          <p className="text-green-500 bg-white px-2 py-1 font-semibold rounded-md -ml-52 md:ml-auto">
+          <p className="text-green-500 bg-white px-2 py-1 font-semibold rounded-md -ml-52 md:-ml-20 lg:ml-auto">
             Admission Helpline: +91-7669533991
           </p>
         </div>
@@ -87,7 +87,7 @@ const Navbar = () => {
           </NavLink>
 
           {/* Navbar Links - Centered */}
-          <div className="hidden md:flex flex-1 justify-center lg:-ml-10 space-x-8">
+          <div className="hidden lg:flex flex-1 justify-center lg:-ml-10 space-x-8">
             <NavLink to="/" className={({ isActive }) => isActive ? 'font-bold text-[#306185]' : 'text-gray-500 hover:text-[#2d4f6b]'}>Home</NavLink>
             <NavLink to="/about" className={({ isActive }) => isActive ? 'font-bold text-[#306185]' : 'text-gray-500 hover:text-[#2d4f6b]'}>About Us</NavLink>
 
@@ -251,7 +251,7 @@ const Navbar = () => {
 
 
           {/* Mobile Menu (Toggled with state) */}
-          <div className="md:hidden ml-auto flex items-center">
+          <div className="lg:hidden ml-auto flex items-center">
             <button onClick={toggleMenu} className="text-gray-500 focus:outline-none">
               {isMenuOpen ? (
                 <svg
@@ -289,7 +289,7 @@ const Navbar = () => {
         </div>
 
         {/* Mobile Menu (Toggled with state) */}
-        <div className={`md:hidden ${isMenuOpen ? 'block' : 'hidden'}`}>
+        <div className={`lg:hidden ${isMenuOpen ? 'block' : 'hidden'}`}>
           <div className="fixed inset-0 bg-black opacity-50 z-10" onClick={toggleMenu}></div>
 
           {/* Mobile Menu Content */}

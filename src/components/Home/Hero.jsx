@@ -55,7 +55,7 @@ const Hero = () => {
       >
         {/* Single wrapped heading */}
         <h1
-          className={`text-2xl md:text-6xl max-w-3xl text-center font-bold drop-shadow-lg transition-all duration-500 ease-in-out ${
+          className={`text-2xl md:text-4xl px-8 lg:text-6xl md:mt-8 lg:mt-0 max-w-3xl text-center font-bold drop-shadow-lg transition-all duration-500 ease-in-out ${
             isFading
               ? "opacity-0 translate-y-5"
               : "opacity-100 translate-y-0"
