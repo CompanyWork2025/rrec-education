@@ -20,7 +20,15 @@ function App() {
       <ScrollToTop />
       <Navbar />
       {/* Suspense prevents content flickering */}
-      <Suspense fallback={<div className="h-screen flex items-center justify-center">Loading...</div>}>
+      <Suspense fallback={
+        <div className="h-screen flex items-center justify-center">
+          <img 
+            src="https://i.gifer.com/ZKZg.gif" 
+            alt="Loading..." 
+            className="w-16 h-16" 
+          />
+        </div>
+      }>
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
