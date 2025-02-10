@@ -21,7 +21,7 @@ const Intro = () => {
               WHO ARE <span className="text-blue-400">WE?</span>
             </h2>
             <p className="text-sm lg:text-[20px] text-justify mt-2 leading-relaxed">
-              At <span className="font-bold text-blue-400">RRREducation</span>, we are dedicated to guiding students in their journey to study at top universities in <span className="font-bold">Russia</span>. With our expertise in university admissions, visa processing, and student support, we make studying abroad a seamless and rewarding experience.
+              At <span className="font-bold text-blue-400">RREC Education</span>, we are dedicated to guiding students in their journey to study at top universities in <span className="font-bold">Russia</span>. With our expertise in university admissions, visa processing, and student support, we make studying abroad a seamless and rewarding experience.
             </p>
           </div>
           {/* Image for Title Section (Only on Medium Screens) */}
@@ -57,7 +57,7 @@ const Intro = () => {
               OUR <span className="text-blue-400">JOURNEY</span>
             </h2>
             <p className="text-sm text-justify lg:text-[20px] mt-2 leading-relaxed">
-              RRREducation started with a vision to simplify the process of studying in Russia. Over the years, we have helped countless students achieve their dream of obtaining a world-class education in prestigious Russian universities. Our team continues to expand, ensuring every student receives personalized guidance and support.
+              RREC Education started with a vision to simplify the process of studying in Russia. Over the years, we have helped countless students achieve their dream of obtaining a world-class education in prestigious Russian universities. Our team continues to expand, ensuring every student receives personalized guidance and support.
             </p>
           </div>
           {/* Image for Journey Section (Only on Medium Screens) */}

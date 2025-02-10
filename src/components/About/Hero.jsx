@@ -24,10 +24,10 @@ const Hero = () => {
         {/* Center Content */}
         <div className="flex flex-col mb-64 md:mb-80 lg:mb-0 lg:-mt-48 items-center text-center mx-5">
           <h1 className="hidden lg:block text-3xl md:text-7xl md:-mt-96 lg:-mt-2 lg:text-7xl font-bold mb-2 text-gray-800">
-            Empowering Dreams, Shaping Futures: <br /> Study in Russia with <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-600">RRREducation</span>
+            Empowering Dreams, Shaping Futures: <br /> Study in Russia with <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-600">RREC Education</span>
           </h1>
           <h1 className="lg:hidden text-[26px] md:text-5xl font-bold text-gray-800 md:mt-4 mt-16">
-            Empowering Dreams, Shaping Futures: <br /> Study in Russia with <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-600">RRREducation</span>
+            Empowering Dreams, Shaping Futures: <br /> Study in Russia with <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-600">RREC Education</span>
           </h1>
 
           {/* Mobile View: Icons in a Row */}
@@ -41,7 +41,7 @@ const Hero = () => {
           </div>
 
           <p className="text-[#1F1F1F] md:text-xl font-semibold lg:text-2xl mt-8 max-w-6xl">
-            RRREducation provides comprehensive guidance for students aspiring to study in Russia, offering expert advice and support throughout the admissions process and beyond.
+            RREC Education provides comprehensive guidance for students aspiring to study in Russia, offering expert advice and support throughout the admissions process and beyond.
           </p>
           {/* Horizontal Line with Button */}
           <div className="flex flex-col md:flex-row items-center w-full mt-4">
@@ -51,7 +51,7 @@ const Hero = () => {
             <div className="flex justify-center w-full md:w-auto">
               <Link to="/contact" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
                 <button className="bg-white md:mt-0 mb-8 md:mb-0 font-bold text-sm md:text-2xl border border-gray-400 text-blue-400 py-2 px-6 md:py-3 md:px-8 mx-4 rounded-xl shadow-md hover:bg-gradient-to-r from-blue-400 to-purple-600  hover:text-white">
-                  Get Started with RRREducation!
+                  Get Started with RREC Education!
                 </button>
               </Link>
             </div>
