@@ -83,13 +83,13 @@ const Navbar = () => {
 
           {/* Logo */}
           <NavLink to="/" className="flex items-center space-x-6">
-            <img src={logo} className="w-28 h-14 lg:w-56 lg:h-20 lg:-ml-16" alt="Logo" />
+            <img src={logo} onClick={handleLinkClick} className="w-28 h-14 lg:w-56 lg:h-20 lg:-ml-16" alt="Logo" />
           </NavLink>
 
           {/* Navbar Links - Centered */}
           <div className="hidden lg:flex flex-1 justify-center lg:-ml-10 space-x-8">
-            <NavLink to="/" className={({ isActive }) => isActive ? 'font-bold text-[#306185]' : 'text-gray-500 hover:text-[#2d4f6b]'}>Home</NavLink>
-            <NavLink to="/about" className={({ isActive }) => isActive ? 'font-bold text-[#306185]' : 'text-gray-500 hover:text-[#2d4f6b]'}>About Us</NavLink>
+            <NavLink to="/" onClick={handleLinkClick} className={({ isActive }) => isActive ? 'font-bold text-[#306185]' : 'text-gray-500 hover:text-[#2d4f6b]'}>Home</NavLink>
+            <NavLink to="/about" onClick={handleLinkClick} className={({ isActive }) => isActive ? 'font-bold text-[#306185]' : 'text-gray-500 hover:text-[#2d4f6b]'}>About Us</NavLink>
 
             <div className="flex space-x-4">
               {/* Medical Universities Dropdown */}
@@ -227,13 +227,13 @@ const Navbar = () => {
               </div>
             </div>
 
-            <NavLink to="/admission-procedure" className={({ isActive }) => isActive ? 'font-bold text-[#306185]' : 'text-gray-500 hover:text-[#2d4f6b]'}>Admission Procedure</NavLink>
+            <NavLink to="/admission-procedure" onClick={handleLinkClick} className={({ isActive }) => isActive ? 'font-bold text-[#306185]' : 'text-gray-500 hover:text-[#2d4f6b]'}>Admission Procedure</NavLink>
 
-            <NavLink to="/apply" className={({ isActive }) => isActive ? 'font-bold text-[#306185]' : 'text-gray-500 hover:text-[#2d4f6b]'}>
+            <NavLink to="/apply" onClick={handleLinkClick} className={({ isActive }) => isActive ? 'font-bold text-[#306185]' : 'text-gray-500 hover:text-[#2d4f6b]'}>
               Apply Now
             </NavLink>
 
-            <NavLink to="/contact" className={({ isActive }) => isActive ? 'font-bold text-[#306185]' : 'text-gray-500 hover:text-[#2d4f6b]'}>
+            <NavLink to="/contact" onClick={handleLinkClick} className={({ isActive }) => isActive ? 'font-bold text-[#306185]' : 'text-gray-500 hover:text-[#2d4f6b]'}>
               Contact Us
             </NavLink>
           </div>
@@ -241,6 +241,7 @@ const Navbar = () => {
           {/* Right-Aligned Enquire Button */}
           <div className="hidden lg:block ml-auto lg:-mr-24">
             <NavLink
+              onClick={handleLinkClick}
               to="/apply"
               className="bg-gradient-to-r from-blue-500 via-blue-400 to-blue-600 text-white font-medium rounded-full px-8 py-2 shadow-lg hover:from-blue-600 hover:via-blue-500 hover:to-blue-700 transition-all duration-300"
             >
