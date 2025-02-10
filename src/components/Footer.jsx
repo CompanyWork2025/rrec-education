@@ -5,7 +5,7 @@ function Footer() {
   const location = useLocation();  // Get the current route
 
   return (
-    <footer className="footer bg-base-200 bg-black text-base-content rounded p-10">
+    <footer className="footer bg-base-200 bg-black text-base-content rounded p-10 z-10">
       <div className={`grid grid-rows-3 grid-cols-1 text-white ${location.pathname === '/' ? 'lg:mt-0 mt-0' : 'lg:mt-0 mt-0'} gap-4 text-center`}>
         {/* Footer Links (Top Center) */}
         <nav className="flex justify-center space-x-6">

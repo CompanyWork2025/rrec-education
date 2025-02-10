@@ -15,6 +15,7 @@ module.exports = {
         zoomEffect: 'zoomEffect 20s infinite alternate',
         colorCycle: 'colorCycle 4s infinite',
         fadeSlideUp: 'fadeSlideUp 1s ease-out', // New fade and slide-up animation
+        shrinkOut: 'shrinkOut 1.5s ease-out forwards', // Add the shrinkOut animation
       },
       keyframes: {
         ticker: {
@@ -36,6 +37,11 @@ module.exports = {
         fadeSlideUp: {
           '0%': { opacity: '0', transform: 'translateY(20px)' },
           '100%': { opacity: '1', transform: 'translateY(0)' },
+        },
+        shrinkOut: {
+          '0%': { transform: 'scale(1)', opacity: '1' },
+          '50%': { transform: 'scale(0.5)', opacity: '0.7' },
+          '100%': { transform: 'scale(0)', opacity: '0' },
         },
       },
     },
