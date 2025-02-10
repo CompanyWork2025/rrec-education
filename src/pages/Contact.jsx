@@ -80,7 +80,7 @@ const ContactUs = () => {
                         </div>
                         <div className="mt-4">
                             <div className="grid grid-cols-2 gap-4">
-                                <div className="flex items-center space-x-4">
+                                <div className="flex items-center w-80 space-x-4">
                                     <FaMapMarkerAlt className="w-8 h-8 text-blue-500" />
                                     <p><strong>Corporate Office Address : </strong><br /> PP Trade Center, Office 709-710,
                                         Pitampura - 110034, New Delhi, India</p>
@@ -122,9 +122,9 @@ const ContactUs = () => {
                             <h2 className="text-xl font-semibold">Russia Head Office</h2>
                         </div>
                         <div className="mt-4">
-                            <div className="grid grid-cols-2 gap-4">
+                            <div className="grid grid-cols-2 px-4 gap-4">
                                 {/* Location */}
-                                <div className="flex items-center space-x-4">
+                                <div className="flex items-center w-80 space-x-4">
                                     <FaMapMarkerAlt className="w-6 h-6 text-blue-500" />
                                     <p><strong>Location:</strong><br />St. Suvorova 74 A
                                         Rostov Don Ton - 344022, Rostov, Russia</p>
