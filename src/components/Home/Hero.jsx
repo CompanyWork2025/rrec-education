@@ -4,6 +4,7 @@ import arrow from "../../assets/arrow.gif";
 const Hero = () => {
   const [isVisible, setIsVisible] = useState(false);
   const [currentHeading, setCurrentHeading] = useState(0);
+  const [isFading, setIsFading] = useState(false);
 
   // Array of heading variations
   const headings = [
@@ -15,7 +16,11 @@ const Hero = () => {
   // Change heading every 4 seconds
   useEffect(() => {
     const interval = setInterval(() => {
-      setCurrentHeading((prev) => (prev + 1) % headings.length);
+      setIsFading(true); // Start fade-out when changing heading
+      setTimeout(() => {
+        setCurrentHeading((prev) => (prev + 1) % headings.length);
+        setIsFading(false); // Fade-in new heading
+      }, 500); // Delay change to allow fade-out effect
     }, 4000); // Change heading every 4 seconds
 
     return () => clearInterval(interval);
@@ -50,10 +55,10 @@ const Hero = () => {
       >
         {/* Single wrapped heading */}
         <h1
-          className={`text-2xl md:text-6xl max-w-3xl text-center font-bold drop-shadow-lg transition-all duration-1000 ease-in-out ${
-            isVisible
-              ? "opacity-100 translate-y-0"
-              : "opacity-0 translate-y-10"
+          className={`text-2xl md:text-6xl max-w-3xl text-center font-bold drop-shadow-lg transition-all duration-500 ease-in-out ${
+            isFading
+              ? "opacity-0 translate-y-5"
+              : "opacity-100 translate-y-0"
           }`}
         >
           {headings[currentHeading]}
