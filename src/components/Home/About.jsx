@@ -60,7 +60,7 @@ const About = () => {
         </div>
 
         {/* Bottom Section */}
-        <div className="flex flex-col lg:flex-row justify-between mt-14 lg:mt-0 gap-8">
+        <div className="flex flex-col lg:flex-row justify-between mt-14 lg:mt-14 gap-8">
           {/* Left Side Image for Mobile */}
           <div className="lg:hidden w-full md:w-full">
             <img
