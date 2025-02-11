@@ -2,25 +2,25 @@ import { useState, useEffect, useRef } from 'react';
 
 const testimonials = [
   {
-    name: "Anastasia Ivanova",
-    location: "Moscow, Russia",
-    text: "StudyinRussia.in made the entire process of applying to universities in Russia so much easier. The guidance provided was precise, and I felt supported every step of the way. Highly recommend it to anyone looking to study in Russia!",
+    name: "Amit Sharma",
+    location: "Rostov-on-Don, Russia",
+    text: "Choosing Rostov State Medical University was the best decision of my life. The faculty is highly knowledgeable, and the admission process through StudyinRussia.in was smooth and transparent. Highly recommended!",
     rating: 5,
-    image: "https://upload.wikimedia.org/wikipedia/commons/thumb/b/b1/%D0%9C%D0%93%D0%A3%2C_%D0%B2%D0%B8%D0%B4_%D1%81_%D0%B2%D0%BE%D0%B7%D0%B4%D1%83%D1%85%D0%B0.jpg/1200px-%D0%9C%D0%93%D0%A3%2C_%D0%B2%D0%B8%D0%B4_%D1%81_%D0%B2%D0%BE%D0%B7%D0%B4%D1%83%D0%B1%D0%B0.jpg", // Replace with actual image paths
+    image: "https://satyamevedu.co.in/wp-content/uploads/2023/04/WhatsApp-Image-2022-05-10-at-12.18.11-AM-1024x683.jpeg", // Replace with actual image path
   },
   {
-    name: "Carlos Mendes",
+    name: "Priya Nair",
     location: "Kazan, Russia",
-    text: "I had no idea where to start with the university application process in Russia, but StudyinRussia.in was a lifesaver. It was seamless and efficient. I am now studying my dream program in Kazan!",
+    text: "Kazan State Medical University has exceeded my expectations! The professors are very supportive, and I got admission without any hassle thanks to StudyinRussia.in. They made everything stress-free.",
     rating: 4,
-    image: "https://mbbsexpert.in/wp-content/uploads/2021/01/Kazan-Federal-University.png", // Replace with actual image paths
+    image: "https://mbbsexpert.in/wp-content/uploads/2021/01/Kazan-Federal-University.png", // Replace with actual image path
   },
   {
-    name: "Sophia Berg",
-    location: "Saint Petersburg, Russia",
-    text: "Thanks to StudyinRussia.in, my admission process to Saint Petersburg State University was smooth and stress-free. The team is highly professional and responsive!",
+    name: "Rahul Verma",
+    location: "Ufa, Russia",
+    text: "Bashkir State Medical University provides an excellent education with modern facilities. StudyinRussia.in guided me throughout the process, making my dream of studying in Russia a reality.",
     rating: 4,
-    image: "https://welcometostudy.com/sites/default/files/higher-education/150/glavnayaspbguglobaleducation.jpg", // Replace with actual image paths
+    image: "https://studymedico.com/public//storage/uploads/university/blog185-BASHKIR%20STATE%20MEDICAL%20UNIVERSITY%20,%20MBBS%20IN%20RUSSIA_1.png", // Replace with actual image path
   },
 ];
 
