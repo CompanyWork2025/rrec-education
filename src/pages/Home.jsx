@@ -6,6 +6,7 @@ import FAQ from "../components/Home/FAQ";
 import About from "../components/Home/About";
 import Slider from "../components/Home/Slider";
 import Videos from "../components/Home/UniversityVideos";
+import Testimonials from "../components/Home/Testimonials";
 
 const Home = () => {
     return (
@@ -34,6 +35,7 @@ const Home = () => {
           <Intro />
           <About />
           <Slider />
+          <Testimonials />
           <FAQ />
           <Videos />
         </>
