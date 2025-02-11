@@ -26,31 +26,54 @@ const testimonials = [
 ];
 
 const StarRating = ({ rating }) => {
-  const stars = Array(5)
-    .fill(false)
-    .map((_, index) => index < rating);
   return (
     <div className="flex space-x-1">
-      {stars.map((filled, index) => (
-        <svg
-          key={index}
-          xmlns="http://www.w3.org/2000/svg"
-          className={`w-6 h-6 ${filled ? "text-yellow-500" : "text-gray-400"}`}
-          fill="currentColor"
-          viewBox="0 0 24 24"
-          stroke="currentColor"
-        >
-          <path d="M12 .587l3.668 7.431 8.214 1.196-5.945 5.993 1.406 8.198L12 18.897l-7.444 3.508 1.405-8.198-5.945-5.993 8.214-1.196L12 .587z" />
-        </svg>
-      ))}
+      {Array(5)
+        .fill(false)
+        .map((_, index) => (
+          <svg
+            key={index}
+            xmlns="http://www.w3.org/2000/svg"
+            className={`w-6 h-6 ${index < rating ? "text-yellow-500" : "text-gray-400"}`}
+            fill="currentColor"
+            viewBox="0 0 24 24"
+            stroke="currentColor"
+          >
+            <path d="M12 .587l3.668 7.431 8.214 1.196-5.945 5.993 1.406 8.198L12 18.897l-7.444 3.508 1.405-8.198-5.945-5.993 8.214-1.196L12 .587z" />
+          </svg>
+        ))}
     </div>
   );
 };
 
 const Testimonials = () => {
   const [currentIndex, setCurrentIndex] = useState(0);
+  const [isInView, setIsInView] = useState(false);
   const sectionRef = useRef(null);
 
+   // Intersection Observer for Scroll Animation
+   useEffect(() => {
+    const observer = new IntersectionObserver(
+      ([entry]) => {
+        if (entry.isIntersecting) {
+          setIsInView(true);
+        }
+      },
+      { threshold: 0.2 }
+    );
+
+    if (sectionRef.current) {
+      observer.observe(sectionRef.current);
+    }
+
+    return () => {
+      if (sectionRef.current) {
+        observer.unobserve(sectionRef.current);
+      }
+    };
+  }, []);
+
+  // Auto-slide every 5 seconds
   useEffect(() => {
     const intervalId = setInterval(() => {
       setCurrentIndex((prevIndex) => (prevIndex + 1) % testimonials.length);
@@ -60,12 +83,15 @@ const Testimonials = () => {
   }, []);
 
   return (
-    <div
+    <motion.div
       ref={sectionRef}
-      className="bg-gradient-to-r from-blue-400 to-purple-600 py-10 lg:py-24 px-4 transition-all duration-1000 ease-in-out"
+      initial={{ opacity: 0, y: 50 }}
+      animate={isInView ? { opacity: 1, y: 0 } : {}}
+      transition={{ duration: 0.8, ease: "easeOut" }}
+      className="bg-gradient-to-r from-blue-400 to-purple-600 py-10 lg:py-24 px-4"
     >
-      <div className="relative max-w-5xl mx-auto">
-        <div className="bg-white lg:right-28 p-8 rounded-3xl shadow-lg relative">
+      <div className="relative lg:right-28 max-w-5xl mx-auto">
+        <div className="bg-white p-8 rounded-3xl shadow-lg relative">
           <AnimatePresence mode="wait">
             <motion.div
               key={currentIndex}
@@ -88,6 +114,7 @@ const Testimonials = () => {
             </motion.div>
           </AnimatePresence>
 
+          {/* Image with Smooth Transition */}
           <div className="hidden lg:block absolute -right-64 top-1/2 transform -translate-y-1/2 z-10">
             <AnimatePresence mode="wait">
               <motion.img
@@ -104,7 +131,7 @@ const Testimonials = () => {
           </div>
         </div>
       </div>
-    </div>
+    </motion.div>
   );
 };
 
