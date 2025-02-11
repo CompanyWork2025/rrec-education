@@ -97,7 +97,7 @@ const Testimonials = () => {
               key={currentIndex}
               initial={{ opacity: 0, x: 50 }}
               animate={{ opacity: 1, x: 0 }}
-              exit={{ opacity: 0, x: -50 }}
+              exit={{ opacity: 0, x: -30 }}
               transition={{ duration: 0.5, ease: "easeInOut" }}
               className="flex flex-col items-start space-y-4"
             >
