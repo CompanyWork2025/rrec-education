@@ -91,7 +91,7 @@ const Testimonials = () => {
         <div className="bg-white p-8 rounded-3xl shadow-lg transform transition duration-300 hover:scale-105 hover:shadow-2xl relative ml-8">
           {/* Text Section */}
           <div className="flex-1">
-            <p className="text-lg text-gray-800 w-4/5 italic mb-6">{testimonials[currentIndex].text}</p>
+            <p className="text-lg text-gray-800 lg:w-4/5 italic mb-6">{testimonials[currentIndex].text}</p>
             <div className="mb-4">
               <StarRating rating={testimonials[currentIndex].rating} />
             </div>
