@@ -67,7 +67,7 @@ const About = () => {
               src="https://miro.medium.com/v2/resize:fit:1400/1*efjn6y3ZHVrr7dZ2J_5QFQ.gif"
               alt="Students at Russian University"
               className="w-full h-auto lg:h-[350px] rounded-lg object-cover"
-              loading="lazy" // Lazy load the GIF
+              loading="lazy" // Lazy load the GIF 
             />
           </div>
 

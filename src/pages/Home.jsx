@@ -22,14 +22,14 @@ const Home = () => {
             <meta property="og:type" content="website" />
             <meta property="og:title" content="Study in Russia | Top Russian Universities for Indian Students 2025" />
             <meta property="og:description" content="Find the best Russian universities for Indian students. Learn about MBBS, Engineering, and other programs, admission requirements, and scholarships." />
-            <meta property="og:image" content="https://www.studyinrussia.in/logo.png?v=2" />
+            <meta property="og:image" content="/logo.png?v=2" />
             <meta property="og:url" content="https://www.studyinrussia.in/" />
 
             {/* Twitter Card Meta Tags */}
             <meta name="twitter:card" content="summary_large_image" />
             <meta name="twitter:title" content="Study in Russia | Top Russian Universities for Indian Students 2025" />
             <meta name="twitter:description" content="Explore top universities in Russia, including MBBS, Engineering, and more for Indian students. Admission details and scholarships available." />
-            <meta name="twitter:image" content="https://www.studyinrussia.in/logo.png?v=2" />
+            <meta name="twitter:image" content="/logo.png?v=2" />
           </Helmet>
           <Hero />
           <Intro />
