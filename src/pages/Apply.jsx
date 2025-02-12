@@ -116,12 +116,12 @@ const Apply = () => {
         <meta name="author" content="Your Website Name" />
         <meta property="og:title" content="Apply Now - Admission to Russian Universities" />
         <meta property="og:description" content="Submit your application for Russian universities like Rostov, Kazan, and Crimea. Fill out the form with your details and apply now!" />
-        <meta property="og:image" content="URL_TO_YOUR_IMAGE" />
+        <meta property="og:image" content="/logo.png?v=2" />
         <meta property="og:url" content="YOUR_PAGE_URL" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Apply Now - Admission to Russian Universities" />
         <meta name="twitter:description" content="Complete the application process for Russian universities with ease. Choose your university and submit your documents online." />
-        <meta name="twitter:image" content="URL_TO_YOUR_IMAGE" />
+        <meta name="twitter:image" content="/logo.png?v=2" />
         <title>Apply Now - Admission to Russian Universities</title>
       </Helmet>
       {/* Banner */}

@@ -26,12 +26,12 @@ const ContactUs = () => {
                 <meta name="author" content="Your Website Name" />
                 <meta property="og:title" content="Contact Us - Russian Educational Consultants" />
                 <meta property="og:description" content="Reach out to us for study in Russia. Get details of our offices, contacts, and working hours. Start your application today!" />
-                <meta property="og:image" content="URL_TO_YOUR_IMAGE" />
+                <meta property="og:image" content="/logo.png?v=2" />
                 <meta property="og:url" content="YOUR_PAGE_URL" />
                 <meta name="twitter:card" content="summary_large_image" />
                 <meta name="twitter:title" content="Contact Us - Russian Educational Consultants" />
                 <meta name="twitter:description" content="Get in touch with RREC for assistance with your application for study in Russia. Find all contact details and office hours." />
-                <meta name="twitter:image" content="URL_TO_YOUR_IMAGE" />
+                <meta name="twitter:image" content="/logo.png?v=2" />
                 <title>Contact Us - Russian Educational Consultants</title>
             </Helmet>
 
