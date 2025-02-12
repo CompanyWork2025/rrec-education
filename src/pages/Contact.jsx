@@ -23,11 +23,11 @@ const ContactUs = () => {
                 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
                 <meta name="description" content="Get in touch with Russian Educational Consultants. Find office locations, contact details, and working hours. Apply now to study in Russia." />
                 <meta name="keywords" content="Contact, Study in Russia, RREC, Russian Educational Consultants, Admission, Russia Office, India Office" />
-                <meta name="author" content="Your Website Name" />
+                <meta name="author" content="Study in Russia" />
                 <meta property="og:title" content="Contact Us - Russian Educational Consultants" />
                 <meta property="og:description" content="Reach out to us for study in Russia. Get details of our offices, contacts, and working hours. Start your application today!" />
                 <meta property="og:image" content="/logo.png?v=2" />
-                <meta property="og:url" content="YOUR_PAGE_URL" />
+                <meta property="og:url" content="https://www.studyinrussia.in/contact" />
                 <meta name="twitter:card" content="summary_large_image" />
                 <meta name="twitter:title" content="Contact Us - Russian Educational Consultants" />
                 <meta name="twitter:description" content="Get in touch with RREC for assistance with your application for study in Russia. Find all contact details and office hours." />

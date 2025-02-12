@@ -113,11 +113,11 @@ const Apply = () => {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="description" content="Apply for admission to top Russian universities with our simple form. Submit your personal details, academic records, and select your desired university easily." />
         <meta name="keywords" content="Apply, Admission, Russian Universities, Rostov, Kazan, Crimea, Medical University, NEET, 12th Marks, Apply Now, University Application" />
-        <meta name="author" content="Your Website Name" />
+        <meta name="author" content="Study in Russia" />
         <meta property="og:title" content="Apply Now - Admission to Russian Universities" />
         <meta property="og:description" content="Submit your application for Russian universities like Rostov, Kazan, and Crimea. Fill out the form with your details and apply now!" />
         <meta property="og:image" content="/logo.png?v=2" />
-        <meta property="og:url" content="YOUR_PAGE_URL" />
+        <meta property="og:url" content="https://www.studyinrussia.in/apply" />
         <meta name="twitter:card" content="summary_large_image" />
         <meta name="twitter:title" content="Apply Now - Admission to Russian Universities" />
         <meta name="twitter:description" content="Complete the application process for Russian universities with ease. Choose your university and submit your documents online." />
