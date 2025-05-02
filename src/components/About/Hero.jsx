@@ -49,7 +49,7 @@ const Hero = () => {
             <div className="hidden md:block flex-grow h-[1px] bg-gray-400" />
             {/* Button */}
             <div className="flex justify-center w-full md:w-auto">
-              <Link to="/contact" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
+              <Link to="/Contact-us" onClick={() => window.scrollTo({ top: 0, behavior: 'smooth' })}>
                 <button className="bg-white md:mt-0 mb-8 md:mb-0 font-bold text-sm md:text-2xl border border-gray-400 text-blue-400 py-2 px-6 md:py-3 md:px-8 mx-4 rounded-xl shadow-md hover:bg-gradient-to-r from-blue-400 to-purple-600  hover:text-white">
                   Get Started with RREC Education!
                 </button>

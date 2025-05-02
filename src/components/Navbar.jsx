@@ -227,13 +227,13 @@ const Navbar = () => {
               </div>
             </div>
 
-            <NavLink to="/admission-procedure" onClick={handleLinkClick} className={({ isActive }) => isActive ? 'font-bold text-[#306185]' : 'text-gray-500 hover:text-[#2d4f6b]'}>Admission Procedure</NavLink>
+            <NavLink to="/admission-procedure-for-study-in-russia/" onClick={handleLinkClick} className={({ isActive }) => isActive ? 'font-bold text-[#306185]' : 'text-gray-500 hover:text-[#2d4f6b]'}>Admission Procedure</NavLink>
 
             <NavLink to="/apply" onClick={handleLinkClick} className={({ isActive }) => isActive ? 'font-bold text-[#306185]' : 'text-gray-500 hover:text-[#2d4f6b]'}>
               Apply Now
             </NavLink>
 
-            <NavLink to="/contact" onClick={handleLinkClick} className={({ isActive }) => isActive ? 'font-bold text-[#306185]' : 'text-gray-500 hover:text-[#2d4f6b]'}>
+            <NavLink to="/Contact-us" onClick={handleLinkClick} className={({ isActive }) => isActive ? 'font-bold text-[#306185]' : 'text-gray-500 hover:text-[#2d4f6b]'}>
               Contact Us
             </NavLink>
           </div>
@@ -440,7 +440,7 @@ const Navbar = () => {
 
             </div>
 
-            <NavLink to="/admission-procedure" onClick={toggleMenu} className={({ isActive }) => isActive ? 'font-bold text-[#306185] block text-center' : 'text-gray-500 hover:text-blue-500 block text-center'}>
+            <NavLink to="/admission-procedure-for-study-in-russia/" onClick={toggleMenu} className={({ isActive }) => isActive ? 'font-bold text-[#306185] block text-center' : 'text-gray-500 hover:text-blue-500 block text-center'}>
               Admission Procedure
             </NavLink>
 
@@ -448,7 +448,7 @@ const Navbar = () => {
               Apply Now
             </NavLink>
 
-            <NavLink to="/contact" onClick={toggleMenu} className={({ isActive }) => isActive ? 'font-bold text-[#306185] block text-center' : 'text-gray-500 hover:text-blue-500 block text-center'}>
+            <NavLink to="/Contact-us" onClick={toggleMenu} className={({ isActive }) => isActive ? 'font-bold text-[#306185] block text-center' : 'text-gray-500 hover:text-blue-500 block text-center'}>
               Contact Us
             </NavLink>
           </div>

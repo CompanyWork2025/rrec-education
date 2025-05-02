@@ -32,11 +32,11 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/admission-procedure" element={<Admission />} />
+          <Route path="/admission-procedure-for-study-in-russia" element={<Admission />} />
           <Route path="/university/:id" element={<UniversityDetailPage />} />
           <Route path="/tech-university/:id" element={<TechUniversityDetailPage />} />
           <Route path="/apply" element={<Apply />} />
-          <Route path="/contact" element={<Contact />} />
+          <Route path="/Contact-us" element={<Contact />} />
         </Routes>
       </Suspense>
       <Footer />
