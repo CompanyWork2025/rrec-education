@@ -229,9 +229,16 @@ const Navbar = () => {
 
             <NavLink to="/admission-procedure-for-study-in-russia/" onClick={handleLinkClick} className={({ isActive }) => isActive ? 'font-bold text-[#306185]' : 'text-gray-500 hover:text-[#2d4f6b]'}>Admission Procedure</NavLink>
 
-            <NavLink to="/apply" onClick={handleLinkClick} className={({ isActive }) => isActive ? 'font-bold text-[#306185]' : 'text-gray-500 hover:text-[#2d4f6b]'}>
+            <a
+              href="https://www.rrecrussia.com/apply-now"
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={handleLinkClick}
+              className="text-gray-500 hover:text-[#2d4f6b]"
+            >
               Apply Now
-            </NavLink>
+            </a>
+
 
             <NavLink to="/Contact-us" onClick={handleLinkClick} className={({ isActive }) => isActive ? 'font-bold text-[#306185]' : 'text-gray-500 hover:text-[#2d4f6b]'}>
               Contact Us
@@ -240,14 +247,16 @@ const Navbar = () => {
 
           {/* Right-Aligned Enquire Button */}
           <div className="hidden lg:block ml-auto lg:-mr-24">
-            <NavLink
-              onClick={handleLinkClick}
-              to="/apply"
+            <a
+              href="https://www.rrecrussia.com/apply-now"
+              target="_blank"
+              rel="noopener noreferrer"
               className="bg-gradient-to-r from-blue-500 via-blue-400 to-blue-600 text-white font-medium rounded-full px-8 py-2 shadow-lg hover:from-blue-600 hover:via-blue-500 hover:to-blue-700 transition-all duration-300"
             >
               Enquire
-            </NavLink>
+            </a>
           </div>
+
 
 
 
@@ -444,9 +453,16 @@ const Navbar = () => {
               Admission Procedure
             </NavLink>
 
-            <NavLink to="/apply" onClick={toggleMenu} className={({ isActive }) => isActive ? 'font-bold text-[#306185] block text-center' : 'text-gray-500 hover:text-blue-500 block text-center'}>
+            <a
+              href="https://www.rrecrussia.com/apply-now"
+              target="_blank"
+              rel="noopener noreferrer"
+              onClick={toggleMenu}
+              className="text-gray-500 hover:text-blue-500 block text-center"
+            >
               Apply Now
-            </NavLink>
+            </a>
+
 
             <NavLink to="/Contact-us" onClick={toggleMenu} className={({ isActive }) => isActive ? 'font-bold text-[#306185] block text-center' : 'text-gray-500 hover:text-blue-500 block text-center'}>
               Contact Us
