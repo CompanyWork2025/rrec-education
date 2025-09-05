@@ -9,6 +9,7 @@ module.exports = {
       fontFamily: {
         expressa: ['Expressa Serial Regular', 'serif'],
         tilt_prism: ['"Tilt Prism"', 'sans-serif'],
+        roboto: ['Roboto', 'sans-serif'], // <-- add this
       },
       animation: {
         ticker: 'ticker 15s linear infinite', // Scrolling text animation

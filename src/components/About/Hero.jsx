@@ -23,7 +23,7 @@ const Hero = () => {
 
         {/* Center Content */}
         <div className="flex flex-col mb-64 md:mb-80 lg:mb-0 lg:-mt-48 items-center text-center mx-5">
-          <h1 className="hidden lg:block text-3xl md:text-7xl md:-mt-96 lg:-mt-2 lg:text-7xl font-bold mb-2 text-gray-800">
+          <h1 className="hidden lg:block text-3xl md:text-7xl md:-mt-96 lg:-mt-2 lg:text-5xl font-bold mb-2 text-gray-800">
             Empowering Dreams, Shaping Futures: <br /> Study in Russia with <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-purple-600">RREC Education</span>
           </h1>
           <h1 className="lg:hidden text-[26px] md:text-5xl font-bold text-gray-800 md:mt-4 mt-16">
@@ -40,7 +40,7 @@ const Hero = () => {
             <IconButton src={icon6} />
           </div>
 
-          <p className="text-[#1F1F1F] md:text-xl font-semibold lg:text-2xl mt-8 max-w-6xl">
+          <p className="text-[#1F1F1F] md:text-lg font-semibold lg:text-xl mt-8 max-w-6xl">
             RREC Education provides comprehensive guidance for students aspiring to study in Russia, offering expert advice and support throughout the admissions process and beyond.
           </p>
           {/* Horizontal Line with Button */}
